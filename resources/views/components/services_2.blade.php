@@ -6,7 +6,7 @@
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="{{asset('/development')}}">
               <span class="caption">
                 <span class="caption-content">
                   <h2>Development</h2>
@@ -19,7 +19,7 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="{{asset('/recruitment')}}">
               <span class="caption">
                 <span class="caption-content">
                   <h2>Recruitment</h2>
@@ -30,7 +30,7 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="{{asset('/items')}}">
               <span class="caption">
                 <span class="caption-content">
                   <h2>Second-hend</h2>
@@ -41,7 +41,7 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="{{asset('/accounttypes')}}">
               <span class="caption">
                 <span class="caption-content">
                   <h2>IederWatWils payment methods</h2>
