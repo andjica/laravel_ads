@@ -11,6 +11,9 @@
           <a class="js-scroll-trigger" href="{{asset('/')}}">Home</a>
         </li>
         <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="{{asset('/development')}}">Development</a>
+        </li>
+        <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="{{asset('/recruitment')}}">Recruitment</a>
         </li>
         <li class="sidebar-nav-item">
