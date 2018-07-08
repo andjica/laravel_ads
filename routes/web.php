@@ -19,4 +19,7 @@ Route::get('/recruitment', "frontController@get_rec");
 Route::get('/items', "frontController@get_ite");
 Route::get('/accounttypes', "frontController@get_acctypes");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 998d4e63c9d8e97ff6cd36d64386216abbda0a3a
