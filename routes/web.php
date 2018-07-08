@@ -10,6 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//test
 Route::get('/', "frontController@index");
 
