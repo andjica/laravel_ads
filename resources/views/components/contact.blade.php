@@ -37,9 +37,9 @@
 			
 		</form>
 	</div>
-	<div class="col-lg-4">
+	<div class="col-lg-4 text-info">
 			<h2 class="mt-4 style_white">Contact Us</h2>
-			  <address class="text-danger">
+			  <address>
 				<strong>Developers for any market - DFAM.INC</strong>
 			  </address>
 			<address>
