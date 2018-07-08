@@ -7,6 +7,7 @@
 
 @section('content')
 <div class="container">
+        @include('components.development.nav')
         @include('components.development.jumbo_header')
       
         @include('components.development.ads')

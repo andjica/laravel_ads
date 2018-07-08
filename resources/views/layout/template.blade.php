@@ -26,7 +26,7 @@
 
   <body id="page-top">
 
-  @include('components.nav')
+ 
 
     @yield('content')
 

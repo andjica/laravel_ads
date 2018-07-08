@@ -1,6 +1,7 @@
 @extends('layout.template')
 
 @section('content')
+    @include('components.nav')
     @include('components.header')
     @include('components.about')
     @include('components.services')
