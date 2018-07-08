@@ -1,30 +1,42 @@
-<table class="table table-bordered table-striped">
+<table class="table table-bordered table-dark text-center text-info">
   <thead>
     <tr>
       <th scope="col">#</th>
       <th scope="col">FREE</th>
-      <th scope="col">PRO</th>
-      <th scope="col">SUPER-PRO</th>
+      <th scope="col">PRO <span class="text-warning">★ ★ ★</span></th>
+      <th scope="col">SUPER-PRO <span class="text-warning">★ ★ ★ ★ ☆</span></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row">ADS</th>
+      <td>2</td>
+      <td>4</td>
+      <td>5</td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <th scope="row">Title</th>
+      <td>YES</td>
+      <td>YES</td>
+      <td>YES</td>
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <th scope="row">Content</th>
+      <td>YES</td>
+      <td>YES</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <th scope="row">Photo</th>
+      <td>5</td>
+      <td>15</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th scope="row">Cetgory</th>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
     </tr>
   </tbody>
 </table>
