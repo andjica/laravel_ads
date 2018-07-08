@@ -39,7 +39,7 @@
 	</div>
 	<div class="col-lg-4">
 			<h2 class="mt-4 style_white">Contact Us</h2>
-			  <address>
+			  <address class="text-danger">
 				<strong>Developers for any market - DFAM.INC</strong>
 			  </address>
 			<address>
