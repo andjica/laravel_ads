@@ -10,10 +10,10 @@ class frontController extends Controller
 
         return view('pages.home');
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 998d4e63c9d8e97ff6cd36d64386216abbda0a3a
+
+
+
     public function get_dev(){
 
         return view('pages.development');
@@ -30,9 +30,4 @@ class frontController extends Controller
 
         return view('pages.accounttypes');
     }
-    
-<<<<<<< HEAD
-
-=======
->>>>>>> 998d4e63c9d8e97ff6cd36d64386216abbda0a3a
-}
+}   
