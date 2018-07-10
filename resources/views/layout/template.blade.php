@@ -24,7 +24,7 @@
     @show
   </head>
 
-  <body>
+  <body id="page-top">
     @yield('top')
  
 

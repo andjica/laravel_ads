@@ -19,7 +19,9 @@
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="{{asset('/items')}}">Second-hand</a>
         </li>
-      
-       
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="{{asset('/accounttypes')}}">See account PRO</a>
+        </li>
+        
       </ul>
     </nav>
