@@ -22,6 +22,8 @@ Route::get('/recruitment', "frontController@get_rec");
 Route::get('/items', "frontController@get_ite");
 Route::get('/accounttypes', "frontController@get_acctypes");
 
+Route::get('/user', "userController@index");
+
 
 Auth::routes();
 
