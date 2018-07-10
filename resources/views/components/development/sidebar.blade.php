@@ -13,10 +13,10 @@
                 <div class="col-lg-6">
                   <ul class="list-unstyled mb-0">
                     <li>
-                      <a href="#">Web Design</a>
+                      <a href="#">Make ads</a>
                     </li>
                     <li>
-                      <a href="#">HTML</a>
+                      <a href="#">See your ads</a>
                     </li>
                     <li>
                       <a href="#">Freebies</a>

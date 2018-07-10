@@ -1,4 +1,4 @@
-<section class="content-section bg-primary text-white">
+<section class="content-section bg-primary text-white" id="sign">
       <div class="container text-center">
         <h2 class="mb-4">Start your first ad...</h2>
 			<form class="form-inline justify-content-center">
