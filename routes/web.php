@@ -10,7 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/test', function()
+{
+  dd(auth()->user());
+});
 Route::get('/', "frontController@index");
 
 //Routes for pages
@@ -19,3 +22,11 @@ Route::get('/recruitment', "frontController@get_rec");
 Route::get('/items', "frontController@get_ite");
 Route::get('/accounttypes', "frontController@get_acctypes");
 
+
+Auth::routes();
+
+Route::post('/login', 'Auth\LoginController@login');
+
+Route::get('/logout', 'Auth\LoginController@logout');
+
+Route::get('/home', 'HomeController@index')->name('home');
