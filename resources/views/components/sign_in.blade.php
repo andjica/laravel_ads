@@ -1,4 +1,4 @@
-<section class="content-section bg-primary text-white" id="sign">
+<section class="content-section bg-primary" id="sign">
 	<img src="./img/logo.png" class="img-fluid"/>
       <div class="container text-center">
         <h2 class="mb-4">Start your first ad...</h2>

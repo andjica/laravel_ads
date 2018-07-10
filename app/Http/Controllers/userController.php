@@ -10,4 +10,8 @@ class userController extends Controller
 
         return view('pages.user.account');
     }
+    public function get_user(){
+
+        return view('pages.user.profile');
+    }
 }

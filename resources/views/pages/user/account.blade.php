@@ -13,10 +13,17 @@
 @endsection
 @section('content')
 
-<div class="container">
-         
+<div class="container bg-light">
+    <div class="row">
         
-       
-    
+        @include('components.sidebar')
+        @include('components.ads.slider')
+        
     </div>
+    <div class="row">
+        @include('components.ads.content_and_map')
+
+    </div>
+   
+</div>
 @endsection
