@@ -1,9 +1,9 @@
 <div class="col-lg-3 ">
          
           <div class="list-group my-4">
-            <a href="#" class="list-group-item active">Category 1</a>
-            <a href="#" class="list-group-item">Category 2</a>
-            <a href="#" class="list-group-item">Category 3</a>
+            <a href="#" class="list-group-item active">Development</a>
+            <a href="#" class="list-group-item">Recruitment</a>
+            <a href="#" class="list-group-item">Second-hand</a>
           </div>
        
           
@@ -19,7 +19,7 @@
                       <a href="#">See your ads</a>
                     </li>
                     <li>
-                      <a href="#">Freebies</a>
+                      <a href="#">See your profile</a>
                     </li>
                   </ul>
                 </div>
