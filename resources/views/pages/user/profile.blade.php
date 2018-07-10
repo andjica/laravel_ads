@@ -6,8 +6,9 @@
 @endsection
 
 @section('top')
-    @include('components.ads.nav_ads')
     
+    @include('components.ads.nav_ads')
+    @include('components.user.top_info')
    
     
 @endsection
@@ -17,13 +18,10 @@
     <div class="row">
         
         @include('components.sidebar')
-        @include('components.ads.slider')
+        @include('components.user.info')
         
     </div>
-    <div class="row">
-        @include('components.ads.content_and_map')
-
-    </div>
+    
    
 </div>
 @endsection

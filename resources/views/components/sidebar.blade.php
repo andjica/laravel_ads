@@ -24,7 +24,7 @@
                 <div class="col-lg-6">
                   <ul class="list-unstyled mb-0">
                     <li>
-                      <a href="#">Your profile</a>
+                      <a href="{{asset('/user_profile')}">Your profile</a>
                     </li>
                     <li>
                       <a href="#">CSS</a>

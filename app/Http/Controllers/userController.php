@@ -8,7 +8,7 @@ class userController extends Controller
 {
     public function index(){
 
-        return view('pages.user.account');
+        return view('pages.user.ads');
     }
     public function get_user(){
 
