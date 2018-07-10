@@ -17,7 +17,7 @@
           <a class="js-scroll-trigger" href="#services">Services</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#portfolio">Sign up/Sign in</a>
+          <a class="js-scroll-trigger" href="#sign">Sign up/Sign in</a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#contact">Contact</a>
