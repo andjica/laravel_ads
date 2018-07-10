@@ -1,7 +1,7 @@
 <div class="col-lg-3">
          
           <div class="list-group my-4">
-          <a href="#"><img class="card-img-top" src="./img/service2.jpg" alt=""></a>
+          <a href="#"><img class="card-img-top" src="./img/service2.jpg" alt="Iederwatwils img"></a>
           </div>
        
           
@@ -19,21 +19,16 @@
                     <li>
                       <a href="#">Manipulationg picture</a>
                     </li>
+            
+             
+                
+                    <li>
+                      <a href="{{asset('/user_profile')}}">Your profile</a>
+                    </li>
+                  
                   </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="{{asset('/user_profile')}">Your profile</a>
-                    </li>
-                    <li>
-                      <a href="#">CSS</a>
-                    </li>
-                    <li>
-                      <a href="#">Tutorials</a>
-                    </li>
-                  </ul>
-                </div>
+
               </div>
             </div>
           </div>
+</div>
