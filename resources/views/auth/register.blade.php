@@ -11,7 +11,7 @@
     @include('components.ads.sidebar')
         <div class="col-lg-8 mt-4">
             <div class="card">
-                <div class="card-header text-muted">{{ __('Register') }}</div>
+                <div class="card-header text-white bg-secondary">{{ __('Register') }}</div>
                 <h4 class="text-primary p-3">Please, fill this to make registration</h4>
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">

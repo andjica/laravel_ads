@@ -1,6 +1,6 @@
 <div class="row text-center">
 
-  <div class="col-lg-3 col-md-6 mb-4">
+  <div class="col-lg-3 col-md-6 mb-4" id="ads">
     <div class="card">
       <img class="card-img-top" src="http://placehold.it/500x325" alt="">
       <div class="card-body">

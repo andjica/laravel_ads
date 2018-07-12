@@ -40,7 +40,9 @@ h6 {
 }
 
 /* Map */
-
+.map{
+  height: 20em;
+}
 
 @media (max-width: 992px) {
   .map {

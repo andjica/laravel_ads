@@ -1,30 +1,45 @@
 
 
-<!-- Jumbotron Header -->
 
-    <!--ako sesija postoji koristicemo ova dva diva,
-    sidebar i header jumbo -->
-
-    <!--<div class="row">
-    @include('components.sidebar')
+@if(auth()->check())
+    <div class="row">
+    @include('components.development.sidebar')
     <div class="col-lg-9">
-     Jumbotron Header 
 
-    <header class="jumbotron my-4">
-        <h1 class="display-4 text-secondary">Weclome to Development ADS</h1>
-        <img src="./img/dev1.jpeg" class="img-fluid">
-        <p class="lead">Here you can post your ads and modified it!</p>
-        <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
+   <header class="jumbotron my-4 bg-dark m-4">
+        <h1 class="display-4 text-info">Welcome to Recruitment ADS</h1>
+        <a class="btn btn-danger btn-xl js-scroll-trigger text-white" href="#ads">Find Out More</a>
+        <br>
+        <img src="./img/rec1.jpeg" class="img-fluid" alt="img recruitment, iederwatwils">
+        <p class="lead text-info">
+          If you have not yet found a job, <b>Iederwatwils</b> allows you to place your ad in less than two minutes. Be creative, describe your knowledge whether it is in the field of IT, or in the field of food industry. Iederwatwils gives support to everyone to get hired.
+           Change your status from an unemployed to an employee!
+ 
+           <b class="text-white"> If you have not yet created your account, do it very quickly 
+            and free to keep your ad on:</b>
+            </p>
+        <a href="{{asset('/register')}}" class="btn btn-primary btn-lg">Sign up</a>
       </header>
+      <hr>
     </div>
     
 
 
 </div>
--->
-<header class="jumbotron my-4">
-        <h1 class="display-4 text-secondary">Weclome to Development ADS</h1>
-        <img src="./img/dev1.jpeg" class="img-fluid">
-        <p class="lead">Here you can post your ads and modified it!</p>
-        <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
+@else
+<header class="jumbotron my-4 bg-dark m-4">
+        <h1 class="display-4 text-info">Welcome to Recruitment ADS</h1>
+        <a class="btn btn-danger btn-xl js-scroll-trigger text-white" href="#ads">Find Out More</a>
+        <br>
+        <img src="./img/rec1.jpeg" class="img-fluid" alt="img recruitment, iederwatwils">
+        <p class="lead text-info">
+          If you have not yet found a job, <b>Iederwatwils</b> allows you to place your ad in less than two minutes. Be creative, describe your knowledge whether it is in the field of IT, or in the field of food industry. Iederwatwils gives support to everyone to get hired.
+           Change your status from an unemployed to an employee!
+ 
+           <b class="text-white"> If you have not yet created your account, do it very quickly 
+            and free to keep your ad on:</b>
+            </p>
+        <a href="{{asset('/register')}}" class="btn btn-primary btn-lg">Sign up</a>
       </header>
+      <hr>
+@endif

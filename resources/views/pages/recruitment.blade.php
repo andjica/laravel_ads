@@ -13,13 +13,8 @@
     
 @endsection
 @section('content')
-<div class="container">
-        
-         <!--Obavezno ici u jumbo_header  tamo ce biti prikazan koji kod treba 
-            da se izvrsi kada se korisnik uloguje
-        -->
-        @include('components.recruitment.jumbo_header')
-      
+    @include('components.recruitment.jumbo_header')
+    <div class="container">
         @include('components.ads.ads')
     </div>
 @endsection
