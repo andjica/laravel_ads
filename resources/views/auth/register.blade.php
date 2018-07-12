@@ -1,13 +1,18 @@
 @extends('layout.template')
-
+@section('top')
+@include('components.ads.nav_ads')
+    <!--Postaviti sesiju, ako sesija postoji skloniti div sign_in -->
+    @include('components.ads.sign_in')
+@endsection
 @section('content')
-@include('components.nav')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
 
+<div class="container">
+    <div class="row">
+    @include('components.ads.sidebar')
+        <div class="col-lg-8 mt-4">
+            <div class="card">
+                <div class="card-header text-muted">{{ __('Register') }}</div>
+                <h4 class="text-primary p-3">Please, fill this to make registration</h4>
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
                         @csrf
@@ -73,6 +78,10 @@
                 </div>
             </div>
         </div>
+        
     </div>
+ 
+       
+
 </div>
 @endsection
