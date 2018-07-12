@@ -22,8 +22,13 @@ Route::get('/recruitment', "frontController@get_rec");
 Route::get('/items', "frontController@get_ite");
 Route::get('/accounttypes', "frontController@get_acctypes");
 
+
+//Ruta za dohvatanje jednog oglasa - nova strana
+Route::get('/ads', "frontController@get_ad");
+
 Route::get('/user_ads', "userController@index");
 Route::get('/user_profile', "userController@get_user");
+
 
 
 Auth::routes();

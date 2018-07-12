@@ -30,4 +30,9 @@ class frontController extends Controller
 
         return view('pages.accounttypes');
     }
+
+    public function get_ad(){
+
+        return view('pages.ads.ads');
+    }
 }   
