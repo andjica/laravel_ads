@@ -40,3 +40,5 @@ Route::get('/logout', 'Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', "adminController@index");
+Route::get('/admin_ads', "adminController@get_ads");
+Route::get('/admin_user', "adminController@get_user");
