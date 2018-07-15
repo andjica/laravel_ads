@@ -10,7 +10,7 @@
         </li>
         <li class="breadcrumb-item active">My Dashboard</li>
       </ol>
-        @include('components.admin.pie_account')
+        @include('components.admin.table')
     </div>
 </div>
 @endsection
