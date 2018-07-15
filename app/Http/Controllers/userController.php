@@ -14,4 +14,8 @@ class userController extends Controller
 
         return view('pages.user.profile');
     }
+    public function insert_ads(){
+
+        return view('pages.user.make_ads');
+    }
 }

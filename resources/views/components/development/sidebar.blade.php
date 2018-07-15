@@ -11,7 +11,7 @@
                 <div class="col-lg-6">
                   <ul class="list-unstyled mb-0">
                     <li>
-                      <a href="#">Make ads</a>
+                      <a href="{{asset('/make_ads')}}">Make ads</a>
                     </li>
                     <li>
                       <a href="{{asset('/user_ads')}}">See your ads</a>

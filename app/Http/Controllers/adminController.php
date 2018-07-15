@@ -10,4 +10,12 @@ class adminController extends Controller
 
         return view('pages.admin.index');
     }
+    public function get_ads(){
+
+        return view('pages.admin.ads');
+    }
+    public function get_user(){
+
+        return view('pages.admin.user');
+    }
 }

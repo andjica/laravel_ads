@@ -26,8 +26,11 @@ Route::get('/accounttypes', "frontController@get_acctypes");
 //Ruta za dohvatanje jednog oglasa - nova strana
 Route::get('/ads', "frontController@get_ad");
 
+
+//Rute kada se korisnik uloguje
 Route::get('/user_ads', "userController@index");
 Route::get('/user_profile', "userController@get_user");
+Route::get('/make_ads', "userController@insert_ads");
 
 
 

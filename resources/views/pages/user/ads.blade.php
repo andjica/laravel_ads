@@ -16,7 +16,7 @@
 <div class="container bg-light">
     <div class="row">
         
-        @include('components.sidebar')
+        @include('components.development.sidebar')
         @include('components.ads.slider')
         
     </div>

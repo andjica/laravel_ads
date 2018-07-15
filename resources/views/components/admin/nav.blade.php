@@ -30,10 +30,10 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
             <li>
-              <a href="navbar.html">Ads</a>
+              <a href="{{asset('/admin_ads')}}">Ads</a>
             </li>
             <li>
-              <a href="cards.html">Users</a>
+              <a href="{{asset('/admin_user')}}">Users</a>
             </li>
           </ul>
         </li>
