@@ -10,7 +10,12 @@
         </li>
         <li class="breadcrumb-item active">My Ads</li>
       </ol>
-       
+     
     </div>
+    <div class="container">
+    <div class="row">
+        @include('components.admin.setting_ads')
+       </div>
+       </div>
 </div>
 @endsection
