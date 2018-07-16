@@ -8,9 +8,14 @@
         <li class="breadcrumb-item">
           <a href="{{asset('/admin')}}">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">My Users</li>
+        <li class="breadcrumb-item active">My Ads</li>
       </ol>
-       
+     
     </div>
+    <div class="container">
+    <div class="row">
+        @include('components.admin.setting_user')
+       </div>
+       </div>
 </div>
 @endsection
