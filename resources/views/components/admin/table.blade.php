@@ -102,28 +102,65 @@
                   <td>Development</td>
                 </tr>
                 <tr>
-                  <td>Shad Decker</td>
-                  <td>Regional Director</td>
-                  <td>Edinburgh</td>
-                  <td>51</td>
-                  <td>2008/11/13</td>
-                  <td>$183,000</td>
+                <td>Zorita Serrano</td>
+                  <td>zori@gmail.com</td>
+                  <td>Website template</td>
+                  <td>See my website template. 
+                  With responsive design and modern style your site'll be diferent on market
+                  Make a contact with me: +316 9656546 - Zorita Serrano
+                  </td>
+                  <td>Image</td>
+                  <td>Free</td>
+                  <td>Development</td>
                 </tr>
                 <tr>
-                  <td>Michael Bruce</td>
-                  <td>Javascript Developer</td>
-                  <td>Singapore</td>
-                  <td>29</td>
-                  <td>2011/06/27</td>
-                  <td>$183,000</td>
+                <td>Zorita Serrano</td>
+                  <td>zori@gmail.com</td>
+                  <td>Website template</td>
+                  <td>See my website template. 
+                  With responsive design and modern style your site'll be diferent on market
+                  Make a contact with me: +316 9656546 - Zorita Serrano
+                  </td>
+                  <td>Image</td>
+                  <td>Free</td>
+                  <td>Development</td>
                 </tr>
                 <tr>
-                  <td>Donna Snider</td>
-                  <td>Customer Support</td>
-                  <td>New York</td>
-                  <td>27</td>
-                  <td>2011/01/25</td>
-                  <td>$112,000</td>
+                <td>Zorita Serrano</td>
+                  <td>zori@gmail.com</td>
+                  <td>Website template</td>
+                  <td>See my website template. 
+                  With responsive design and modern style your site'll be diferent on market
+                  Make
+                   a contact with me: +316 9656546 - Zorita Serrano
+                  </td>
+                  <td>Image</td>
+                  <td>Free</td>
+                  <td>Development</td>
+                </tr>
+                <tr>
+                <td>Zorita Serrano</td>
+                  <td>zori@gmail.com</td>
+                  <td>Website template</td>
+                  <td>See my website template. 
+                  With responsive design and modern style your site'll be diferent on market
+                  Make a contact with me: +316 9656546 - Zorita Serrano
+                  </td>
+                  <td>Image</td>
+                  <td>Free</td>
+                  <td>Development</td>
+                </tr>
+                <tr>
+                <td>Zorita Serrano</td>
+                  <td>zori@gmail.com</td>
+                  <td>Website template</td>
+                  <td>See my website template. 
+                  With responsive design and modern style your site'll be diferent on market
+                  Make a contact with me: +316 9656546 - Zorita Serrano
+                  </td>
+                  <td>Image</td>
+                  <td>Free</td>
+                  <td>Development</td>
                 </tr>
               </tbody>
             </table>
