@@ -12,7 +12,7 @@
 */
 Route::get('/test', function()
 {
-  dd(auth()->user());
+  dd(request());
 });
 Route::get('/', "frontController@index");
 
