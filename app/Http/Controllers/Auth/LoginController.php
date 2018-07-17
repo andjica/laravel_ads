@@ -42,7 +42,7 @@ class LoginController extends Controller
     public function login()
     {
         if (auth()->attempt(['email' => request()->email, 'password' => request()->password])) {
-            return redirect('/home');
+            return redirect('/user_profile');
         }
         
         return redirect('/login')->with("message", "Wrong email or password. Please try again");
