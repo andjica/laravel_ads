@@ -1,18 +1,20 @@
 <div class="container">
 <div class="row p-4">
 <!-- Map -->
-	<div class="col-lg-4">
-    <section id="contact" class="map">
-      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-      <br/>
-      <small>
-        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-      </small>
-    </section>
+	<div class="col-lg-4 my-5">
+		<section id="video">
+		<img src="{{asset('/')}}/img/logo.png" class="img-fluid"/>
+		<video width="340" height="250" controls>
+
+	<source src="{{asset('/')}}/video/iw_home_page.mp4" type="video/mp4">
+	
+		</video>
+		</section>
+		
 	</div>
 	
 	
-	<div class="col-lg-4">
+	<div class="col-lg-4 my-5">
 	
 		<form class="form-group">
 		<h3 class="text-primary text-center">For more information sent us message</h3>
@@ -37,8 +39,8 @@
 			
 		</form>
 	</div>
-	<div class="col-lg-4 text-info">
-			<h2 class="mt-4 style_white">Contact Us</h2>
+	<div class="col-lg-4 text-info my-5">
+			<h2 class=" style_white">Contact Us</h2>
 			  <address>
 				<strong>Developers for any market - DFAM.INC</strong>
 			  </address>
