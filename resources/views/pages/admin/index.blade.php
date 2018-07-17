@@ -11,6 +11,7 @@
         <li class="breadcrumb-item active">My Dashboard</li>
       </ol>
         @include('components.admin.table')
+        @include('components.admin.two_table')
     </div>
 </div>
 @endsection

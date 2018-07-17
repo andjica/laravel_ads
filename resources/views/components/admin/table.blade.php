@@ -1,7 +1,8 @@
+<div class="row">
 <div class="col-lg-12">
 <div class="card mb-3">
-        <div class="card-header">
-          <i class="fa fa-table"></i> Users and Ads table</div>
+        <div class="card-header bg-success">
+         <h5 class="text-white">Users and Ads table</h5></div>
         <div class="card-body">
           <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -168,4 +169,5 @@
         </div>
         <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
       </div>
+</div>
 </div>
