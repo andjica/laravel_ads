@@ -27,6 +27,12 @@
              @include('components.ads.content_and_map')
         </div>
     </div>
+    <div class="row">
+       
+        
+            @include('components.ads.video')
+        
+    </div>
     <hr>
     <div class="row">
       
