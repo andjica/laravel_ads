@@ -1,7 +1,7 @@
 <section class="content-section bg-primary" id="sign">
 	<img src="./img/logo.png" class="img-fluid"/>
       <div class="container text-center">
-        <h2 class="mb-4">Start your first ad...</h2>
+        <h2 class="mb-4 text-white">Start your first ad...</h2>
 			<form method="POST" action="{{ asset('/login') }}" class="form-inline justify-content-center">
 			@csrf
 				<div class="form-group mx-sm-3 mb-2">
