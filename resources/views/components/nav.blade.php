@@ -2,10 +2,10 @@
 <a class="menu-toggle rounded" href="#">
       <i class="fa fa-bars"></i>
     </a>
-    <nav id="sidebar-wrapper">
+    <nav id="sidebar-wrapper" class="bg-dark">
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top">Iederwatwils menu</a>
+          <a class="js-scroll-trigger" href="#page-top"><img src="./img/logo.png" class="img-fluid"/></a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#page-top">Home</a>
@@ -14,7 +14,7 @@
           <a class="js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#services">Services</a>
+          <a class="js-scroll-trigger" href="#recent_ads">Services</a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#sign">Sign up/Sign in</a>

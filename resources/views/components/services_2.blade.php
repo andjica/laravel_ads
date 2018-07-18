@@ -1,4 +1,4 @@
-<section class="content-section" id="portfolio">
+<section class="content-section" id="recent_ads">
       <div class="container">
         <div class="content-section-heading text-center">
           <h2 class="text-primary mb-5">Recent ADS</h2>
