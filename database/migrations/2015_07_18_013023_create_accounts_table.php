@@ -15,7 +15,20 @@ class CreateAccountsTable extends Migration
     {
         Schema::create('accounts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('account_type');
+            $table->integer('user_id')->unsigned()->index();
+            $table->integer('account_type_id')->unsigned()->index();
+            $table->dateTime('valid_until')->nullable();
+            $table->timestamps();
+
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('cascade');
+
+            $table->foreign('account_type_id')
+                ->references('id')
+                ->on('account_types')
+                ->onDelete('cascade');
         });
     }
 
