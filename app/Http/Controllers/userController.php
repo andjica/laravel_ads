@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Category;
 
 class userController extends Controller
 {
@@ -16,6 +17,7 @@ class userController extends Controller
     }
     public function insert_ads(){
 
-        return view('pages.user.make_ads');
+        $categories = Category::all();
+        return view('pages.user.make_ads', compact('categories'));
     }
 }
