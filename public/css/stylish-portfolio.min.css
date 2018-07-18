@@ -16,7 +16,8 @@ h1,h2,h3,h4,h5,h6{font-weight:700}.text-faded{color:rgba(255,255,255,.7)}
 .masthead{min-height:30rem;position:relative;display:table;width:100%;
 height:auto;
 padding-top:8rem;
-padding-bottom:8rem;background:linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(../img/search.jpg);
+padding-bottom:8rem;background:linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(../img/back889.jpeg);
+
 
 background-repeat:no-repeat;background-size:cover}
 .masthead h1{font-size:4rem;margin:0;padding:0}@media (min-width:992px){.masthead{height:100vh}

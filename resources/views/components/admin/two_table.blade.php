@@ -36,7 +36,6 @@
                   <td>zori@gmail.com</td>
                   <td>Free</td>
                   <td>Development</td>
-                </tr>
                 <tr>
                   <td>Zorita Serrano</td>
                   <td>zori@gmail.com</td>

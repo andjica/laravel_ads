@@ -31,4 +31,9 @@
     @yield('content')
 
     <hr>
+  
   @include('components.footer')
+  @include('components.footer_bottom')
+  
+  
+  
