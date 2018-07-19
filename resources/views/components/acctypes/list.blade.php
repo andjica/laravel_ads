@@ -1,5 +1,5 @@
 
-<div class="col-md-4 my-5">
+<div class="col-md-4">
 
 
 <div class="list-group my-5">

@@ -1,6 +1,6 @@
 @extends('layout.template')
 @section('top')
-@include('components.ads.nav_ads'))
+@include('components.ads.nav_ads')
 @endsection
 @section('content')
 

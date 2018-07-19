@@ -2,7 +2,7 @@
 
 
 
-<div class="col-md-8 my-4">
+<div class="col-md-8">
 <img src="./img/logo.png" class="img-fluid"/>
 <h3 class="my-2 text-danger">Heeft voor jou een gratis advertentie voor je klaargemaakt
 </h3>
