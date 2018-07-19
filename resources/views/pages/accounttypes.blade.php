@@ -3,7 +3,11 @@
 @section('content')
     @include('components.ads.nav_ads')
     <div class="container">
-        @include('components.acctypes.content')
-        @include('components.acctypes.table')
+        <div class="row my-4">
+            @include('components.acctypes.list')
+            @include('components.acctypes.content')
+            
+        </div>
+        
     </div>
 @endsection
