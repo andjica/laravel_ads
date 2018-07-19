@@ -1,7 +1,7 @@
 
 <hr>
 <div class="col-lg-3"  id="table1">
-    <h3 class="text-info">Zie naar onze pakketten</h3>
+    <h3 class="text-info">Bekijk onze aantrekkelijke pakketen</h3>
 </div>
 <table class="table table-bordered table-dark text-center text-info">
   <thead>

@@ -24,35 +24,38 @@
   </div>
   <img src="./img/acc_2.jpeg" class="img-fluid"/>
   <p class="mb-1">
-Op zoek naar een baan? Maak je eigen werk, indrukken staan ​​hier tussenin</p>
-  <small class="text-muted">Donec id elit non mi porta.</small>
+    Op zoek naar een baan? Maak je eigen werk, indrukken staan ​​hier tussenin.
+  </p>
+  <small class="text-muted">IederWatWils 2018.</small>
 </a>
-<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+<a href="{{asset('/items')}}" class="list-group-item list-group-item-action flex-column align-items-start">
   <div class="d-flex w-100 justify-content-between">
     <h5 class="mb-1">Tweede hands</h5>
     <small class="text-muted">3 days ago</small>
   </div>
   <img src="./img/acc_3.jpeg" class="img-fluid"/>
-  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-  <small class="text-muted">Donec id elit non mi porta.</small>
+  <p class="mb-1">
+    Als je te veel kleding hebt, accesorizes, horloges en meer, verkoop dan via IederWatWils.
+  </p>
+  <small class="text-muted">IederWatWils 2018</small>
 </a>
-<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+<a href="{{asset('/cars')}}" class="list-group-item list-group-item-action flex-column align-items-start">
   <div class="d-flex w-100 justify-content-between">
     <h5 class="mb-1">Auto's</h5>
     <small class="text-muted">3 days ago</small>
   </div>
   <img src="./img/acc_4.jpeg" class="img-fluid"/>
-  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-  <small class="text-muted">Donec id elit non mi porta.</small>
+  <p class="mb-1">Adverteer bij elkwatwils welke voertuigen in wilt verkopen.</p>
+  <small class="text-muted">IederWatWils 2018.</small>
 </a>
-<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+<a href="{{asset('/houses')}}" class="list-group-item list-group-item-action flex-column align-items-start">
   <div class="d-flex w-100 justify-content-between">
     <h5 class="mb-1">Huizen</h5>
     <small class="text-muted">3 days ago</small>
    </div>
   <img src="./img/acc_5.jpeg" class="img-fluid"/>
-  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-  <small class="text-muted">Donec id elit non mi porta.</small>
+  <p class="mb-1">Op zoek naar een ideaal huis? Zie EigenWatWils eigen advertenties.</p>
+  <small class="text-muted">IederWatWils 2018.</small>
 </a>
 </div>
 </div>
