@@ -8,30 +8,60 @@ use App\Ad;
 use App\Video;
 use App\Picture;
 
+use App\User;
+
 class AdController extends Controller
 {
     public function store()
     {
 
-       $rules = [
+        if (auth()->user()->account->type->id == '1')
+        { 
+            $picture_rule = 'max:5';
+            $picture_message = 'You can only post 5 images with your account';
+            $video_rule = 'sometimes';
+            $video_message = '';
+        }
+
+        if (auth()->user()->account->type->id== '2')
+        {
+            $picture_rule = 'max:15';
+            $picture_message = 'You can only post 15 images with your account';
+            $video_rule = 'max:1';
+            $video_message = 'You can only post 1 video with your account';
+        }
+
+        if (auth()->user()->account->type->id == '3')
+        {
+            $picture_rule = 'max:25';
+            $picture_message = 'You can only post 25 images with your account';
+            $video_rule = 'max:3';
+            $video_message = 'You can only post 3 videos with your account';
+        }
+        
+        $rules = [
             'title' => 'required',
             'body' => 'required|max:500',
             'phone' => 'numeric',
             'category' => 'required',
-            'images.*' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'videos.*' => 'sometimes|file|mimetypes:video/mp4,video/ogg,video/avi,video/quicktime|max:20000'
+            'pictures.*' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'pictures' => $picture_rule,
+            'videos.*' => 'sometimes|file|mimetypes:video/mp4,video/ogg,video/avi,video/quicktime|max:20000',
+            'videos' => 'max:2'
         ];
 
         $messages = [
-            'images.*' => 'Images must be jpeg, png, gif or svg and must not exceed 2048kb',
-            'videos.*' => 'Videos must be mp4, ogg, avi or quicktime and must not exceed 20000kb' 
+            'pictures.max' => $picture_message,
+            'pictures.*' => 'Images must be jpeg, png, gif or svg and must not exceed 2048kb',
+            'videos.max' => $video_message,
+            'videos.*' => 'Videos must be mp4, ogg, avi or quicktime and must not exceed 20000kb',
         ];
 
         $data = request()->validate($rules, $messages);
 
         //KREIRA NOVI OGLAS I SMESTA GA U BAZU
         $ad = Ad::create([
-            'user_id' => 1, //ovde treba da ide auth()
+            'user_id' => auth()->user()->id,
             'title' => $data['title'],
             'body' => $data['body'],
             'phone' => $data['phone'],

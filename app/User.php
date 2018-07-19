@@ -34,4 +34,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Account::class);
     }
+
+    public function ad()
+    {
+        return $this->hasOne(Ad::class);
+    }
 }
