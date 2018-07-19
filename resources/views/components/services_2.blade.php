@@ -1,7 +1,7 @@
 <section class="content-section" id="recent_ads">
       <div class="container">
         <div class="content-section-heading text-center">
-          <h2 class="text-primary mb-5">Recent ADS</h2>
+          <h2 class="text-primary mb-5">Meest populaire advertenties</h2>
           
         </div>
         <div class="row no-gutters">
@@ -10,7 +10,8 @@
               <span class="caption">
                 <span class="caption-content">
                   <h2>Development</h2>
-                  <p class="mb-0">You can present your website, andorid and ios app..</p>
+                  <p class="mb-0">
+                  Toon uw website, iOS-app en Android-applicatie!</p>
 					
                 </span>
 				
@@ -22,8 +23,9 @@
             <a class="portfolio-item" href="{{asset('/recruitment')}}">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>Recruitment</h2>
-                  <p class="mb-0">You are still looking for a job? See our offer and make your ads with CV!</p>
+                  <h2>Reqruitment</h2>
+                  <p class="mb-0">
+                    Zoek een baan, maak een advertentie over jezelf!</p>
                 </span>
               </span>
               <img class="img-fluid" src="img/service2.jpg" alt="">
@@ -33,8 +35,10 @@
             <a class="portfolio-item" href="{{asset('/items')}}">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>Second-hend</h2>
-                  <p class="mb-0">Sell and buy items!</p>
+                  <h2>Tweede Hands</h2>
+                  <p class="mb-0">
+                    Werp geen dingen, laat ze niet zien!
+                  </p>
                 </span>
               </span>
               <img class="img-fluid" src="img/service3.png" alt="">
@@ -44,8 +48,8 @@
             <a class="portfolio-item" href="{{asset('/accounttypes')}}">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>IederWatWils payment methods</h2>
-                  <p class="mb-0">See account types</p>
+                  <h2>Gratis profiel en pakketten</h2>
+                  <p class="mb-0">Kijk..</p>
                 </span>
               </span>
               <img class="img-fluid" src="img/service4.jpeg" alt="">

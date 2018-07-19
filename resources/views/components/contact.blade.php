@@ -17,7 +17,8 @@
 	<div class="col-lg-4 my-5">
 	
 		<form class="form-group">
-		<h3 class="text-primary text-center">For more information sent us message</h3>
+		<h3 class="text-primary text-center">Stuur ons een bericht voor meer informatie
+</h3>
 				<div class="form-group mx-sm-5 mb-2">
 					<label for="inputEmail" class="sr-only">Email</label>
 					<input type="text" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email">
@@ -40,34 +41,25 @@
 		</form>
 	</div>
 	<div class="col-lg-4 text-info my-5">
-			<h2 class=" style_white">Contact Us</h2>
+			<h2 class=" style_white">
+				Neem contact met ons op</h2>
 			  <address>
-				<strong>Developers for any market - DFAM.INC</strong>
+				<strong>IederWatWils</strong>
 			  </address>
 			<address>
 				<abbr title="Web site">Web site:</abbr>
-				<a href="http://dfambusiness.com/">www.dfambusiness.com</a>
+				<a href="http://dfambusiness.com/">//</a>
 			  </address>
 			  <address>
 				<abbr title="Email">Email:</abbr>
-				<a href="mailto:developersforanymarket@gmail.com">developersforanymarket@gmail.com</a>
-			  </address>
-				<address>
-					<abbr title="KvK">KvK: 69921709 0000</abbr>
-				</address>	
-				<address>
-					<abbr title="Vestnr">Vestnr: 000038237458</abbr>
-				</address>
-                        <span itemprop="telephone"><a href="tel:+381604636936">
+				<a href="mailto:info@iederwatwils.nl">info@iederwatwils.nl</a>
+			  </address>	
+                        <span itemprop="telephone"><a href="tel:+31651119923">
                                     
-                             <i class="fa fa-phone"></i> +381 60 46 36 936</a>
+                             <i class="fa fa-phone"></i> +316 51 119 923</a>
                             </span><br>
-                            <span itemprop="telephone"><a href="tel:+31638515470">
-                                    
-                             <i class="fa fa-phone"></i> +316 385 15 470</a>
-                            </span>
-			  <p>For information you can contact us and we will reply within 12 hours. The respond time for developers and designers is 2 hours.
-				Also you can Contact us: +316 385 15 470
+                         
+			  <p class="my-4">Voor meer informatie betreft de advertenties kunt u ons mailen of telefonisch bellen, wij staan klaar om al uw vragen te beantwoorden.
 				</p>
 	</div>
 	</div>
