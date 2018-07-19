@@ -17,13 +17,14 @@
 
   <small><a href="{{asset('/register')}}">Als u uw account nog niet hebt gemaakt</a></small>
 </a>
-<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+<a href="{{asset('/recruitment')}}" class="list-group-item list-group-item-action flex-column align-items-start">
   <div class="d-flex w-100 justify-content-between">
     <h5 class="mb-1">Werving</h5>
     <small class="text-muted">3 days ago</small>
   </div>
   <img src="./img/acc_2.jpeg" class="img-fluid"/>
-  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+  <p class="mb-1">
+Op zoek naar een baan? Maak je eigen werk, indrukken staan ​​hier tussenin</p>
   <small class="text-muted">Donec id elit non mi porta.</small>
 </a>
 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
