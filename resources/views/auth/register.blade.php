@@ -1,8 +1,6 @@
 @extends('layout.template')
 @section('top')
-@include('components.ads.nav_ads')
-    <!--Postaviti sesiju, ako sesija postoji skloniti div sign_in -->
-    @include('components.ads.sign_in')
+@include('components.ads.nav_ads'))
 @endsection
 @section('content')
 
