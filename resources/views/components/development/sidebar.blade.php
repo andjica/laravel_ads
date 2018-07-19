@@ -1,7 +1,7 @@
 <div class="col-lg-3">
          
           <div class="list-group my-4">
-          <a href="#"><img class="card-img-top" src="./img/service2.jpg" alt="Iederwatwils img"></a>
+          <a href="#"><img class="card-img-top" src="./img/service1.jpeg" alt="Iederwatwils img"></a>
           </div>
        
           
