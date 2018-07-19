@@ -27,8 +27,10 @@
                     </li>
                   
                   </ul>
-
+                 
               </div>
+              
             </div>
+            <img src="./img/logo.png" class="img-fluid">
           </div>
 </div>

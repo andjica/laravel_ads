@@ -19,30 +19,10 @@
         @include('components.development.sidebar')
        
         <!--za formu -->
-        <form action="{{asset('/insert')}}" method="POST" enctype="multipart/form-data">
-            {{ csrf_field() }}
-            <input type="text" name="title" required>
-            <select name='category'>
-                @foreach ($categories as $c)
-                    <option value="{{$c->id}}">{{$c->category}}</option>
-                @endforeach
-            </select>
-            <textarea name="body" cols="10" rows="5"></textarea>
-            <input type="text" name="phone">
-            Select your videos<input type="file" name="videos[]" multiple>
-            Select your images<input type="file" name="pictures[]" multiple>
-            <input type="submit" value="Post your ad">
-        </form>
+        @include('components.user.form')
+       
 
-        @foreach($errors->all() as $e)
-            {{$e}} </br>
-        @endforeach
-
-        @if(!empty(session('message')))
-
-            {{session('message')}}
-
-        @endif
+       
 
     </div>
    
