@@ -4,6 +4,7 @@
     @include('components.nav')
     @include('components.header')
     @include('components.about')
+    @include('components.home_ads')
     @include('components.services')
     @include('components.services_2')
 
