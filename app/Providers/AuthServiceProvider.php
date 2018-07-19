@@ -25,6 +25,8 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        Gate::define('upload-video', function ($user) {
+            return $user->account->type->id != '1';
+        });
     }
 }

@@ -6,6 +6,10 @@
     @include('components.about')
     @include('components.services')
     @include('components.services_2')
-    @include('components.sign_in')
+
+    @if(!auth()->check())
+        @include('components.sign_in') 
+    @endif 
+
     @include('components.contact')
 @endsection

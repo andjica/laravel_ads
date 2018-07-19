@@ -16,9 +16,18 @@
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#recent_ads">Services</a>
         </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#sign">Sign up/Sign in</a>
-        </li>
+
+        {{-- PROVERAVA DA LI IMA SESIJA I NA OSNOVU TOGA SETUJE --}}
+        @if(auth()->check())
+          <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="{{asset('user_profile')}}">Go to your dashboard</a>
+          </li>
+          @else
+          <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#sign">Sign up/Sign in</a>
+          </li>
+        @endif
+
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#contact">Contact</a>
         </li>

@@ -19,8 +19,7 @@
         @include('components.development.sidebar')
        
         <!--za formu -->
-        @include('components.user.form')
-       
+
 
        
 
