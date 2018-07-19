@@ -2,7 +2,7 @@
 <div class="row p-4">
 <!-- Map -->
 	<div class="col-lg-4 my-5">
-		<section id="video">
+		<section id="contact">
 		<img src="{{asset('/')}}/img/logo.png" class="img-fluid"/>
 		<video width="340" height="250" controls>
 
