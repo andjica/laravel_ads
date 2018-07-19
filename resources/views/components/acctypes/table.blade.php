@@ -1,3 +1,8 @@
+
+<hr>
+<div class="col-lg-3"  id="table1">
+    <h3 class="text-info">See account types</h3>
+</div>
 <table class="table table-bordered table-dark text-center text-info">
   <thead>
     <tr>
@@ -9,34 +14,46 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row">ADS</th>
-      <td>2</td>
-      <td>4</td>
-      <td>5</td>
+      <th scope="row" class="text-white">ADS</th>
+      <td>1 </td>
+      <td>1 </td>
+      <td>1 </td>
     </tr>
     <tr>
-      <th scope="row">Title</th>
-      <td>YES</td>
-      <td>YES</td>
-      <td>YES</td>
-    </tr>
-    <tr>
-      <th scope="row">Content</th>
+      <th scope="row" class="text-white">Title</th>
       <td>YES</td>
       <td>YES</td>
       <td>YES</td>
     </tr>
     <tr>
-      <th scope="row">Photo</th>
+      <th scope="row" class="text-white">Content</th>
+      <td>YES</td>
+      <td>YES</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <th scope="row" class="text-white">Photo</th>
       <td>5</td>
       <td>15</td>
       <td>25</td>
     </tr>
     <tr>
-      <th scope="row">Cetgory</th>
-      <td>2</td>
-      <td>3</td>
-      <td>3</td>
+      <th scope="row" class="text-white">Video</th>
+      <td>NO</td>
+      <td>1 Video</td>
+      <td>3 Video</td>
+    </tr>
+    <tr>
+      <th scope="row" class="text-white">Category</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th scope="row" class="text-white">Price</th>
+      <td><b class="text-white">/</b></td>
+      <td><b class="text-secondary">€ 11,69</b></td>
+      <td><b class="text-secondary">€ 21,00</b></td>
     </tr>
   </tbody>
 </table>
