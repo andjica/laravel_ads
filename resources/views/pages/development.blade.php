@@ -7,8 +7,10 @@
 
 @section('top')
     @include('components.ads.nav_ads')
-    <!--Postaviti sesiju, ako sesija postoji skloniti div sign_in -->
-    @include('components.ads.sign_in')
+    
+    @if(!auth()->check())
+        @include('components.ads.sign_in')
+    @endif
     
 @endsection
 @section('content')

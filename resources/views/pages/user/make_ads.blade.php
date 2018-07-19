@@ -20,7 +20,7 @@
        
         <!--za formu -->
         <form action="{{asset('/insert')}}" method="POST" enctype="multipart/form-data">
-            {{ csrf_field() }}
+            @csrf
             <input type="text" name="title" required>
             <select name='category'>
                 @foreach ($categories as $c)
@@ -29,7 +29,11 @@
             </select>
             <textarea name="body" cols="10" rows="5"></textarea>
             <input type="text" name="phone">
-            Select your videos<input type="file" name="videos[]" multiple>
+
+            @can('upload-video')
+                Select your videos<input type="file" name="videos[]" multiple>
+            @endcan
+            
             Select your images<input type="file" name="pictures[]" multiple>
             <input type="submit" value="Post your ad">
         </form>
