@@ -1,5 +1,30 @@
+
+
 <div class="col-lg-6 my-4">
+        @if(auth()->user()->ad)
+            <h1 class="text-danger">You already have an ad, please wait for it to expire!<br>
+                
+            </h1>
+            <h3 class="text-info">It will expire {{Carbon\Carbon::parse(auth()->user()->ad->expires)->diffForHumans()}}, on {{auth()->user()->ad->created_at}}</h3>
+        @else
     <h3 class="text-info"><i class="fa fa-star text-danger" style="font-size:48px;"></i>Make your Ad quickly</h3>
+
+    @if(count($errors->all()))
+        <ul class="list-group">
+            @foreach($errors->all() as $e)
+        
+                <li class="list-group-item list-group-item-danger">{{$e}}</li>
+        
+            @endforeach
+        </ul>
+    @endif
+
+        @if(!empty(session('message')))
+
+            <p class="alert alert-success" role="alert">{{session('message')}}</p>
+
+        @endif
+
     
 <form action="{{asset('/insert')}}" method="POST" enctype="multipart/form-data">
 <div class="form-group">
@@ -27,10 +52,11 @@
 
             <div class="form-group">
           
-            <label for="exampleFormControlTextarea1" class="text-info">Select video</label>
-                <input type="file" name="videos[]" class="form-control" multiple>
-            </div>
-
+            @can('upload-vide')
+                <label for="exampleFormControlTextarea1" class="text-info">Select video</label>
+                    <input type="file" name="videos[]" class="form-control" multiple>
+                </div>
+            @endcan
 
             <div class="form-group">
             <label for="exampleFormControlTextarea1" class="text-info">Select picture</label>
@@ -43,18 +69,9 @@
             </div>
             
         </form>
-
-         @foreach($errors->all() as $e)
-            {{$e}} </br>
-        @endforeach
-
-        @if(!empty(session('message')))
-
-            {{session('message')}}
-
-        @endif
 </div>
 <div class="col-lg-3">
          
         
 </div>
+@endif

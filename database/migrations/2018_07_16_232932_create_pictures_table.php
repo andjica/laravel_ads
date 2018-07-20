@@ -16,7 +16,7 @@ class CreatePicturesTable extends Migration
         Schema::create('pictures', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('ad_id')->unsigned()->index();
-            $table->string('src');
+            $table->string('src')->default('default_ad_picture.png');
             $table->string('alt')->default('Ad picture');
 
             $table->foreign('ad_id')
