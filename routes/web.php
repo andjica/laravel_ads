@@ -11,6 +11,7 @@ Route::get('/', "frontController@index");
 Route::get('/development', "frontController@get_dev");
 Route::get('/recruitment', "frontController@get_rec");
 Route::get('/items', "frontController@get_ite");
+Route::get('/houses', "frontController@get_house");
 Route::get('/accounttypes', "frontController@get_acctypes");
 
 
