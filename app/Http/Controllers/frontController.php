@@ -41,4 +41,8 @@ class frontController extends Controller
 
         return view('pages.houses');
     }
+    public function get_car(){
+
+        return view('pages.cars');
+    }
 }   
