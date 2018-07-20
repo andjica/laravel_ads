@@ -17,6 +17,7 @@ class frontController extends Controller
 
     public function get_dev(){
 
+        
         return view('pages.development');
     }
     public function get_rec(){

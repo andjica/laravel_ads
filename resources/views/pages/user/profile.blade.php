@@ -16,7 +16,6 @@
 
 <div class="container bg-light">
     <div class="row">
-        
         @include('components.development.sidebar')
         @include('components.user.info')
         

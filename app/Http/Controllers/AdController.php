@@ -88,6 +88,12 @@ class AdController extends Controller
                     ]); 
                 }
             }
+            else 
+            {
+                Picture::create([
+                    'ad_id' => $ad['id']
+                ]); 
+            }
 
             //PROVERAVA DA LI POSTOJE KLIPOVI I DA LI SU DUZI OD 30 SEK
             if(request()->hasFile('videos'))
@@ -123,9 +129,9 @@ class AdController extends Controller
                  
             }
 
-            return redirect()->back()->with('message', 'Success! Your ad is posted!');
+            return redirect('/user_profile')->with('message', 'Success! Your ad is posted!');
         }
 
-        return redirect()->back()->with('message', 'Something happened! Please try again');
+        return redirect('/user_profile')->with('message', 'Something happened! Please try again');
     }
 }
