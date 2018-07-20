@@ -1,4 +1,7 @@
 @extends('layout.template')
+@section('title')
+    IederWatWils - Development
+@endsection
 @section('appendCss')
 @parent
     <link href="{{asset('/')}}css/heroic-features.css" rel="stylesheet">
@@ -17,7 +20,7 @@
 
   @include('components.development.jumbo_header')
     <div class="container">
-        @include('components.ads.ads')
+        @include('components.development.ads')
          
     </div>
 @endsection       

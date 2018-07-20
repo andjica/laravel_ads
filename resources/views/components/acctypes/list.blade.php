@@ -3,15 +3,15 @@
 
 
 <div class="list-group my-5">
-<a href="{{asset('/development')}}" class="list-group-item list-group-item-action bg-info flex-column align-items-start active">
+<a href="{{asset('/development')}}" class="list-group-item list-group-item-action bg-info flex-column align-items-start">
   <div class="d-flex w-100 justify-content-between">
-    <h5 class="mb-1">Ontwikkeling</h5>
+    <h5 class="mb-1 text-white">Ontwikkeling</h5>
     <small>3 days ago</small>
   </div>
 
   <img src="./img/acc_1.jpeg" class="img-fluid"/>
 
-  <p class="mb-1">
+  <p class="mb-1 text-white">
       Je bent goed in programmeren? Toon uw app, toon uw website, ios-app en plaats uw advertentie!
   </p>
 

@@ -31,5 +31,8 @@
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#contact">Contact</a>
         </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="{{asset('/accounttypes')}}">See account PRO</a>
+        </li>
       </ul>
     </nav>

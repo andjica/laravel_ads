@@ -37,4 +37,8 @@ class frontController extends Controller
 
         return view('pages.ads.ads');
     }
+    public function get_house(){
+
+        return view('pages.houses');
+    }
 }   
