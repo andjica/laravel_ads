@@ -28,7 +28,7 @@
 </div>
 @else
 <header class="jumbotron my-4 bg-dark m-4">
-        <h1 class="display-4 text-info">Welcome to Development ADS</h1>
+        <h1 class="display-4 text-info"> IederWatWils - Development Advertentie</h1>
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
         <img src="./img/dev1.jpeg" class="img-fluid" alt="img recruitment, iederwatwils">
