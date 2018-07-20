@@ -1,5 +1,7 @@
 @extends('layout.template')
-
+@section('title')
+    IederWatWils Account Types
+@endsection
 @section('content')
     @include('components.ads.nav_ads')
     <div class="container">

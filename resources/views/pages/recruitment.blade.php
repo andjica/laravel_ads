@@ -1,5 +1,7 @@
 @extends('layout.template')
-
+@section('title')
+    IederWatWils - Requitment
+@endsection
 @section('appendCss')
 @parent
     <link href="{{asset('/')}}css/heroic-features.css" rel="stylesheet">
@@ -17,6 +19,6 @@
 @section('content')
     @include('components.recruitment.jumbo_header')
     <div class="container">
-        @include('components.ads.ads')
+        @include('components.recruitment.ads')
     </div>
 @endsection

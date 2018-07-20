@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Template</title>
+    <title>IederWatWils | @yield('title')</title>
 
     <!-- Bootstrap Core CSS -->
     @section('appendCss')

@@ -8,7 +8,7 @@
 
    <header class="jumbotron my-4 bg-dark m-4">
         <h1 class="display-4 text-info">Welcome to Recruitment ADS</h1>
-        <a class="btn btn-danger btn-xl js-scroll-trigger text-white" href="#ads">Find Out More</a>
+        <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
         <img src="./img/rec1.jpeg" class="img-fluid" alt="img recruitment, iederwatwils">
         <p class="lead text-info">
@@ -29,7 +29,7 @@
 @else
 <header class="jumbotron my-4 bg-dark m-4">
         <h1 class="display-4 text-info">Welcome to Recruitment ADS</h1>
-        <a class="btn btn-danger btn-xl js-scroll-trigger text-white" href="#ads">Find Out More</a>
+        <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
         <img src="./img/rec1.jpeg" class="img-fluid" alt="img recruitment, iederwatwils">
         <p class="lead text-info">

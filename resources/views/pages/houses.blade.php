@@ -17,7 +17,7 @@
 
   @include('components.houses.jumbo_header')
     <div class="container">
-        @include('components.ads.ads')
+        @include('components.houses.ads')
          
     </div>
 @endsection
