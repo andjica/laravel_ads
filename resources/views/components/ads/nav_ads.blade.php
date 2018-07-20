@@ -14,10 +14,16 @@
           <a class="js-scroll-trigger" href="{{asset('/development')}}">Development</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{{asset('/recruitment')}}">Recruitment</a>
+          <a class="js-scroll-trigger" href="{{asset('/recruitment')}}">Werwing</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{{asset('/items')}}">Second-hand</a>
+          <a class="js-scroll-trigger" href="{{asset('/items')}}">Tweend Hands</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="{{asset('/houses')}}">Houses</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="{{asset('/cars')}}">Auto's</a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="{{asset('/accounttypes')}}">See account PRO</a>

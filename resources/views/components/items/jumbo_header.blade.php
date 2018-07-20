@@ -10,6 +10,18 @@
         <h1 class="display-4 text-info">IederWatwils - Tweede Hands Advertentie</h1>
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
+
+        <img src="./img/sec1.jpeg" class="img-fluid" alt="img recruitment, iederwatwils">
+        <p class="lead text-white p-3 bg-secondary rounded my-3">
+
+           U bent uw spulletjes zat, maar gunt het een 2e kans?, u hebt teveel en wilt iets minder?
+Via IEDERWATWILS profiteert u van de beste winst, en maakt u mooie mensen blij met uw eerdere aankoop. Een mooie win win situatie! 
+            <b class="text-white">Registreer en meld je aan:</b>       
+ 
+   
+            </p>
+        <a href="{{asset('/register')}}" class="btn btn-primary btn-lg">Sign up</a>
+
       </header>
       <hr>
     </div>

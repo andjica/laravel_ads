@@ -29,12 +29,8 @@
         <br>
         <img src="./img/rec1.jpeg" class="img-fluid" alt="img recruitment, iederwatwils">
         <p class="lead text-white p-3 bg-secondary rounded my-3">
-        Als je nog geen baan hebt gevonden, kun je met 
-        Elkwatwils je advertentie in minder dan twee minuten plaatsen. 
-        Wees creatief, beschrijf je kennis, of het nu op het gebied van IT 
-        is of op het gebied van de voedingsmiddelenindustrie. Iederwatwils geeft 
-        iedereen steun om te worden ingehuurd. Verander uw status van een werkloze 
-        naar een werknemer! <b class="text-info">Als u uw account nog 
+        Op zoek naar een nieuwe baan?, uw oude werksituatie is niet meer wat u wenst?
+        Via een mooie uitgebreide advertentie bij IEDERWATWILS komt u wellicht in een nieuw werkomgeving terecht?!! <b class="text-info">Als u uw account nog 
         niet hebt gemaakt, doet u het zeer snel en gratis om uw advertentie op te laten:</b>
  
 
