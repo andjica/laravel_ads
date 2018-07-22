@@ -25,10 +25,10 @@
   </head>
 
   <body id="page-top">
-    @include('components.top_header')
+   
     
     @yield('top')
- 
+   
 
     @yield('content')
 
