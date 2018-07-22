@@ -7,11 +7,11 @@
 
                 @if ($loop->first)
                   <div class="carousel-item active">
-                      <img class="d-block img-fluid" src="{{asset('/ads/images/'.$pic->src)}}" style="max-height:320px !important; width: 820px !important;" alt="First slide">
+                      <img class="d-block img-fluid" src="{{asset('/ads/images/'.$pic->src)}}" style="max-height:320px !important; width: 820px !important;" alt="{{$pic->alt}}">
                   </div>
                 @endif
                   <div class="carousel-item">
-                      <img class="d-block img-fluid" src="{{asset('/ads/images/'.$pic->src)}}" style="max-height:320px !important; width: 820px !important;" alt="First slide">
+                      <img class="d-block img-fluid" src="{{asset('/ads/images/'.$pic->src)}}" style="max-height:320px !important; width: 820px !important;" alt="{{$pic->alt}}">
                   </div>
 
 
