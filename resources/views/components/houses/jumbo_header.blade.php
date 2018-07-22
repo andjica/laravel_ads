@@ -15,9 +15,6 @@
        
         Als je je huis nog niet hebt verkocht, IederWatWils is een echte advertentie. Maak een advertentie! Toon uw huis dat u wilt verkopen met veel foto's, video's en locatie. 
         Laat zien en geniet ervan!
-        <b>Klik hier om te registreren: </b>
-
-        <a href="{{asset('/register')}}" class="btn btn-primary btn-lg">Sign up</a>
       </header>
       <hr>
     

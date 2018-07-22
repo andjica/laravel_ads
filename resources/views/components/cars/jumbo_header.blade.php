@@ -14,11 +14,6 @@
         <p class="lead text-white p-3 bg-danger rounded my-3">
           If you have not yet found a job, <b>Iederwatwils</b> allows you to place your ad in less than two minutes. Be creative, describe your knowledge whether it is in the field of IT, or in the field of food industry. Iederwatwils gives support to everyone to get hired.
            Change your status from an unemployed to an employee!
- 
-           <b class="text-white"> If you have not yet created your account, do it very quickly 
-            and free to keep your ad on:</b>
-            </p>
-        <a href="{{asset('/register')}}" class="btn btn-primary btn-lg">Sign up</a>
       </header>
       <hr>
     </div>
