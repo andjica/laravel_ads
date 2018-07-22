@@ -1,21 +1,21 @@
 <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
-        <p class="text-info"> <a href="{{asset('/')}}" class="btn btn-secondary"><b>&copy;IederWatWils  2018. All Rights Reserved.</b></a>
+ <a href="{{asset('/')}}" class="btn btn-secondary"><b>&copy;IederWatWils  2018. All Rights Reserved.</b></a>
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="{{asset('/development')}}" class="btn btn-default">Development</a>
+            <a href="{{asset('/development')}}">Development</a>
           </li>
           <li class="list-inline-item">
-            <a href="{{asset('/recruitment')}}" class="btn btn-default">Werving</a>
+            <a href="{{asset('/recruitment')}}">Werving</a>
           </li>
           <li class="list-inline-item">
-            <a href="{{asset('/items')}}" class="btn btn-default">Tweend Hands</a>
+            <a href="{{asset('/items')}}">Tweend Hands</a>
           </li>
           <li class="list-inline-item">
-            <a href="{{asset('/houses')}}" class="btn btn-default">Houses</a>
+            <a href="{{asset('/houses')}}">Houses</a>
           </li>
           <li class="list-inline-item">
-            <a href="{{asset('/cars')}}" class="btn btn-default">Cars</a>
+            <a href="{{asset('/cars')}}">Cars</a>
           </li>
           <li class="list-inline-item">
           
