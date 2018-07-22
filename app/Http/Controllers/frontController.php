@@ -7,43 +7,73 @@ use App\Ad;
 
 class frontController extends Controller
 {
-    public function index(){
+    public function index()
+    {
 
         return view('pages.home');
     }
 
+    public function get_dev()
+    {
 
+        $ads = Ad::with(['pictures' => function ($query) {
+            $query->limit(1);
+        }])->where('category_id', '1')->paginate(4);
 
-
-    public function get_dev(){
-
-        
-        return view('pages.development');
+        return view('pages.development', compact('ads'));
     }
-    public function get_rec(){
 
-        return view('pages.recruitment');
-    }
-    public function get_ite(){
+    public function get_rec()
+    {
+        $ads = Ad::with(['pictures' => function ($query) {
+            $query->limit(1);
+        }])->where('category_id', '2')->paginate(4);
 
-        return view('pages.items');
+        return view('pages.recruitment', compact('ads'));
     }
-    public function get_acctypes(){
+
+    public function get_ite()
+    {
+        $ads = Ad::with(['pictures' => function ($query) {
+            $query->limit(1);
+        }])->where('category_id', '3')->paginate(4);
+
+        return view('pages.items', compact('ads'));
+    }
+
+    public function get_acctypes()
+    {
 
         return view('pages.accounttypes');
     }
 
-    public function get_ad($ad){
+    public function get_ad($ad)
+    {
 
-        $ad = Ad::with('user','pictures','videos')->where('id',$ad)->first() ?? abort(404);
-        return view('pages.ads.ads', compact('ad'));
+        $data['ad'] = Ad::with('user','pictures','videos')->where('id',$ad)->first() ?? abort(404);
+
+        $data['ads'] = Ad::with(['pictures' => function ($query) {
+            $query->limit(1);
+         }])->orderBy('created_at', 'desc')->limit(3)->get();
+
+        return view('pages.ads.ads', $data);
     }
-    public function get_house(){
 
-        return view('pages.houses');
+    public function get_house()
+    {
+        $ads = Ad::with(['pictures' => function ($query) {
+            $query->limit(1);
+        }])->where('category_id', '4')->paginate(4);
+
+        return view('pages.houses', compact('ads'));
     }
-    public function get_car(){
 
-        return view('pages.cars');
+    public function get_car()
+    {
+        $ads = Ad::with(['pictures' => function ($query) {
+            $query->limit(1);
+        }])->where('category_id', '5')->paginate(4);
+
+        return view('pages.cars', compact('ads'));
     }
 }   
