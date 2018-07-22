@@ -29,11 +29,47 @@
                   </ul>
                  
               </div>
-              
+      
+            </div>
+           
+          </div>
+          <h5 class="card-header text-danger">Categorie</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a href="{{asset('/development')}}">Development</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="{{asset('/recruitment')}}">Recruitment</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="{{asset('/items')}}">Second Hands</a>
+                    </li>
+                   
+                    <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="{{asset('/cars')}}" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Voertuigen
+              </a>
+              <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="portfolio-1-col.html">Auto's</a>
+                <a class="dropdown-item" href="portfolio-2-col.html">Vaartuigen</a>  
+              </div>
+            </li>
+                    <li class="nav-item">
+                      <a href="{{asset('/houses')}}">Houses</a>
+                    </li>
+                  
+                  </ul>
+                 
+              </div>
+      
             </div>
             <img src="./img/logo.png" class="img-fluid">
           </div>
 </div>
+
 
 
 
