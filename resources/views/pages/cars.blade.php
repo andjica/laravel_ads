@@ -17,9 +17,11 @@
     
 @endsection
 @section('content')
-
-  @include('components.cars.jumbo_header')
-    <div class="container">
+	<div class="container">
+		<div class="row">
+		
+		@include('components.cars.jumbo_header')
+		<hr>
         @include('components.cars.ads')
          
     </div>

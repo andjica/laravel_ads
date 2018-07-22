@@ -2,11 +2,11 @@
 
 
 @if(auth()->check())
-    <div class="row">
-    @include('components.development.sidebar')
+   
+@include('components.development.sidebar')
     <div class="col-lg-9">
 
-<header class="jumbotron my-4 m-4 gb-light">
+	<header class="jumbotron my-4 m-4 gb-light">
         <h1 class="display-4 text-primary">Welcome to Houses ADS</h1>
         <a class="btn btn-primary btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
@@ -24,13 +24,14 @@
         </p>
         <a href="{{asset('/register')}}" class="btn btn-primary btn-lg">Sign up</a>
       </header>
-      <hr>
+  
     
 
 
-</div>
+	</div>
 @else
-<header class="jumbotron my-4 m-4 gb-light">
+	<div class="col-lg-12">
+	<header class="jumbotron my-4 m-4 gb-light">
         <h1 class="display-4 text-primary">IederWatWils - Huis Advertentie</h1>
         <a class="btn btn-primary btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
@@ -45,5 +46,5 @@
         </p>
         <a href="{{asset('/register')}}" class="btn btn-primary btn-lg">Sign up</a>
       </header>
-      <hr>
+     </div>
 @endif

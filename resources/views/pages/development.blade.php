@@ -18,8 +18,13 @@
 @endsection
 @section('content')
 
-  @include('components.development.jumbo_header')
-    <div class="container">
+	<div class="container">
+    <div class="row">
+		
+		@include('components.development.jumbo_header')
+	</div>
+
+    
         @include('components.development.ads')
          
     </div>

@@ -17,8 +17,14 @@
     
 @endsection
 @section('content')
-    @include('components.recruitment.jumbo_header')
-    <div class="container">
+<div class="container">
+    <div class="row">
+		
+		@include('components.recruitment.jumbo_header')
+	</div>
+
+    
         @include('components.recruitment.ads')
+         
     </div>
 @endsection

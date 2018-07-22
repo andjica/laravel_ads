@@ -14,10 +14,12 @@
     
 @endsection
 @section('content')
-
-  @include('components.houses.jumbo_header')
-    <div class="container">
+<div class="container">
+    <div class="row">
+        @include('components.houses.jumbo_header')
+    </div>
         @include('components.houses.ads')
          
     </div>
+
 @endsection

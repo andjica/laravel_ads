@@ -17,10 +17,12 @@
     
 @endsection
 @section('content')
-
-  @include('components.items.jumbo_header')
-    <div class="container">
+<div class="container">
+    <div class="row">
+		
+		@include('components.items.jumbo_header')
+    </div>
         @include('components.items.ads')
          
-    </div>
+ </div>
 @endsection 
