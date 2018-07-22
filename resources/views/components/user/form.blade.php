@@ -52,7 +52,7 @@
 
             <div class="form-group">
           
-            @can('upload-vide')
+            @can('upload-video')
                 <label for="exampleFormControlTextarea1" class="text-info">Select video</label>
                     <input type="file" name="videos[]" class="form-control" multiple>
                 </div>
