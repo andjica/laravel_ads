@@ -112,8 +112,7 @@ class AdController extends Controller
                     {
 
                         // $filename = time(). "." .$video->getClientOriginalExtension();
-                        $filename = time().
-                        $video->getClientOriginalname();
+                        $filename = time().$video->getClientOriginalname();
                         $video->move(public_path().'/ads/videos', $filename);
         
                         Video::create([
@@ -123,7 +122,7 @@ class AdController extends Controller
                     }
                     else 
                     {
-                        return redirect()->back()->with('message', 'Video too long, max size is 30 seconds');
+                        return redirect()->back()->with('message', 'Video too long, max duration is 30 seconds');
                     }
                 }
                  

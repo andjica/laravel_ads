@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
+use App\Ad;
 use App\User;
 
 class userController extends Controller
@@ -15,7 +16,7 @@ class userController extends Controller
 
     public function index(){
 
-        $ad = User::with('ad','ad.pictures','ad.videos')->find(auth()->user()->id);
+        $ad = Ad::with('user','pictures','videos')->where('user_id','=',auth()->user()->id)->first();
         return view('pages.user.ads', compact('ad'));
     }
     public function get_user(){

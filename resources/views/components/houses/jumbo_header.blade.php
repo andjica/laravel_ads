@@ -12,6 +12,9 @@
         <br>
         <img src="./img/house1.jpg" class="img-fluid" alt="img recruitment, iederwatwils">
         <p class="lead text-light p-3 bg-primary rounded my-3">
+       
+        Als je je huis nog niet hebt verkocht, IederWatWils is een echte advertentie. Maak een advertentie! Toon uw huis dat u wilt verkopen met veel foto's, video's en locatie. 
+        Laat zien en geniet ervan!
             Maak van uw huis een droomhuis voor anderen, of koop uw droomhuis van een ander.
             Via de mooiste zelfgemaakte video's bij <b>IederWatWils</b>
             laat u zien dat wonen een genot kad zijn. Met uw koop of verkoop

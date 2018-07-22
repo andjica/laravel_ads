@@ -33,9 +33,10 @@ class frontController extends Controller
         return view('pages.accounttypes');
     }
 
-    public function get_ad(){
+    public function get_ad($ad){
 
-        return view('pages.ads.ads');
+        $ad = Ad::with('user','pictures','videos')->where('id',$ad)->first() ?? abort(404);
+        return view('pages.ads.ads', compact('ad'));
     }
     public function get_house(){
 
