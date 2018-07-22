@@ -1,17 +1,21 @@
-<!-- Zamisljeno je da ima tri diva -->
+@foreach($ads as $ad)
 <div class="col-lg-4 mb-4 mt-4">
           <div class="card h-100 bg-secondary">
-            <h4 class="card-header text-white">Card Title</h4>
+            <h4 class="card-header text-white">{{$ad->title}}</h4>
             <div class="card-body bg-white">
-            <a href="#"><img class="card-img-top" src="./img/service4.jpeg" alt=""></a>
-              <p class="card-text text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+            @foreach ($ad->pictures as $pic)
+            <img class="card-img-top" src="{{asset('/ads/images/'.$pic->src)}}" alt="{{$pic->alt}}">
+            @endforeach
+              <p class="card-text text-info">{{$ad->body}}</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="{{$ad->id}}" class="btn btn-primary">Learn More</a>
             </div>
           </div>
+         
         </div>
-        <div class="col-lg-4 mb-4 mt-4">
+        @endforeach
+       {{--  <div class="col-lg-4 mb-4 mt-4">
           <div class="card h-100 bg-secondary">
             <h4 class="card-header text-white">Card Title</h4>
             <div class="card-body bg-white">
@@ -34,6 +38,6 @@
               <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
-        </div>
+        </div> --}}
         
 
