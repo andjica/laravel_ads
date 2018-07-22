@@ -2,6 +2,7 @@
 
 @section('content')
     @include('components.nav')
+    @include('components.top_header')
     @include('components.header')
     @include('components.about')
     @include('components.services')

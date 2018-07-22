@@ -1,6 +1,6 @@
 <footer class="bg-dark py-5 text-danger">
       <div class="container">
-        <p>&copy; <b>IederWatWils</b> 2018. All Rights Reserved.</p>
+      <p class="text-info"> <a href="{{asset('/')}}" class="btn btn-info"><b>&copy;IederWatWils  2018. All Rights Reserved.</b></a>
         <ul class="list-inline">
           <li class="list-inline-item">
             <a href="#">Privacy</a>
@@ -24,5 +24,6 @@
             <a href="{{asset('/accounttypes')}}">Account type</a>
           </li>
         </ul>
+        
       </div>
     </footer>
