@@ -42,8 +42,9 @@ class AdController extends Controller
         $rules = [
             'title' => 'required',
             'body' => 'required|max:500',
-            'phone' => 'numeric',
+            'phone' => 'nullable|numeric',
             'category' => 'required',
+            'website' => 'nullable',
             'pictures.*' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'pictures' => $picture_rule,
             'videos.*' => 'sometimes|file|mimetypes:video/mp4,video/ogg,video/avi,video/quicktime|max:20000',
@@ -65,6 +66,7 @@ class AdController extends Controller
             'title' => $data['title'],
             'body' => $data['body'],
             'phone' => $data['phone'],
+            'website' => $data['website'],
             'category_id' => $data['category'],
             'expires' => \Carbon\Carbon::now()->addMonth()
         ]);
@@ -132,5 +134,28 @@ class AdController extends Controller
         }
 
         return redirect('/user_profile')->with('message', 'Something happened! Please try again');
+    }
+
+    public function edit()
+    {
+        $data = request()->validate([
+            'title' => 'required',
+            'body' => 'required|max:500',
+            'phone' => 'nullable|numeric',
+            'website' => 'nullable'
+        ]);
+
+        $ad = Ad::where('user_id',auth()->user()->id)->first();
+
+
+        $ad->title = $data['title'];
+        $ad->body = $data['body'];
+        $ad->phone = $data['phone'];
+        $ad->website = $data['website'];
+
+        $ad->save();
+
+        return redirect('/user_profile')->with('message','Your ad is successfully changed');
+
     }
 }

@@ -6,6 +6,9 @@
                 
             </h1>
             <h3 class="text-info">It will expire {{Carbon\Carbon::parse(auth()->user()->ad->expires)->diffForHumans()}}, on {{auth()->user()->ad->created_at}}</h3>
+            <h6 class='text-success'>
+                You can see your ad <a href="{{asset('user_ads')}}">here</a>
+            </h6>
         @else
     <h3 class="text-info"><i class="fa fa-star text-danger" style="font-size:48px;"></i>Make your Ad quickly</h3>
 
@@ -26,13 +29,13 @@
         @endif
 
     
-<form action="{{asset('/insert')}}" method="POST" enctype="multipart/form-data">
+<form action="{{asset('/edit')}}" method="POST" enctype="multipart/form-data">
+    @csrf
 <div class="form-group">
     <label for="exampleFormControlInput1" class="text-info">Title</label>
     <input type="text" name="title" class="form-control"required>
     
   </div>
-            {{ csrf_field() }}
             <div class="form-group">
              <label for="exampleFormControlSelect1" class="text-info">Choice category</label>   
                 <select name='category' class="form-control text-secondary">
@@ -49,6 +52,10 @@
             <label for="exampleFormControlTextarea1" class="text-info">Phone number</label>
                 <input type="text" name="phone" class="form-control">
             </div>
+            <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class="text-info">Website location</label>
+                        <input type="text" name="website" class="form-control">
+                    </div>
 
             <div class="form-group">
           

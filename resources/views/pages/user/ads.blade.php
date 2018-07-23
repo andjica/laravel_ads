@@ -15,16 +15,36 @@
     <div class="row">
         
         @include('components.development.sidebar')
-        @include('components.ads.slider')
         
-    </div>
-    <div class="row">
-        <div class="col-lg-3">
-        </div>
-        <div class="col-lg-9">
-             @include('components.ads.content_and_map')
-        </div>
-    </div>
+        @if ($ad)
+        
+            
+            @include('components.ads.slider')
+
+            
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-9">
+                    @include('components.ads.content_and_map')
+                </div>
+            </div>
+
+        @else
+            <div class="col-lg-9 text-center">
+                    
+                <h1 class="text-danger" style="margin-top:150px;">
+                
+                    You havent posted an ad yet.
+                        
+                </h1>
+            </div>
+            </div>
+            
+        @endif
+        
    
 </div>
 @endsection

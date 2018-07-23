@@ -20,9 +20,6 @@
             laat u zien dat wonen een genot kad zijn. Met uw koop of verkoop
             maakt u uzelf of andere mensen blij en gelukkig. <b>IederWatWils, ONROEREND GOED IS OOK ECHT GOED!!</b>
 
-        <b>Klik hier om te registreren: </b>
-        </p>
-        <a href="{{asset('/register')}}" class="btn btn-primary btn-lg">Sign up</a>
       </header>
   
     
