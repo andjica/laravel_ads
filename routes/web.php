@@ -13,6 +13,11 @@ Route::get('/recruitment', "frontController@get_rec");
 Route::get('/items', "frontController@get_ite");
 Route::get('/houses', "frontController@get_house");
 Route::get('/cars', "frontController@get_car");
+
+
+Route::get('/company', "frontController@get_com");
+
+
 Route::get('/accounttypes', "frontController@get_acctypes");
 
 
@@ -24,7 +29,7 @@ Route::get('/ads/{ad}', "frontController@get_ad");
 Route::get('/user_ads', "userController@index");
 Route::get('/user_profile', "userController@get_user");
 Route::get('/make_ads', "userController@insert_ads");
-Route::get('/delete','userController@destroy');
+Route::get('/delete', "userController@destroy");
 Route::get('/edit', 'userController@showAdEdit');
 Route::post('/edit', 'AdController@edit');
 

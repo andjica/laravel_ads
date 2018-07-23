@@ -29,7 +29,7 @@
         @endif
 
     
-<form action="{{asset('/edit')}}" method="POST" enctype="multipart/form-data">
+<form action="{{asset('/insert')}}" method="POST" enctype="multipart/form-data">
     @csrf
 <div class="form-group">
     <label for="exampleFormControlInput1" class="text-info">Title</label>
@@ -38,7 +38,7 @@
   </div>
             <div class="form-group">
              <label for="exampleFormControlSelect1" class="text-info">Choice category</label>   
-                <select name='category' class="form-control text-secondary">
+                <select name="category" class="form-control text-secondary">
                     @foreach ($categories as $c)
                         <option value="{{$c->id}}">{{$c->category}}</option>
                     @endforeach

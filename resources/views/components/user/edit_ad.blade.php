@@ -1,7 +1,8 @@
 
 @if ($ad)
-
-<form action="{{asset('/edit')}}" method="POST" enctype="multipart/form-data">
+<div class="col-lg-6 my-4">
+<h3 class="text-danger">Edit your Ad:</h3>
+<form action="{{asset('/edit')}}" method="POST" enctype="multipart/form-data" class="my-4">
     
     @csrf
     <div class="form-group">
@@ -28,7 +29,7 @@
                 </div>
                 
             </form>
-        
+      </div>  
     @else
 
     Nemate oglas

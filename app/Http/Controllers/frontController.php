@@ -74,4 +74,12 @@ class frontController extends Controller
 
         return view('pages.cars', compact('ads'));
     }
+    public function get_com()
+    {
+        $ads = Ad::with(['pictures' => function ($query) {
+            $query->limit(1);
+        }])->where('category_id', '6')->orderBy('created_at', 'desc')->paginate(4);
+
+        return view('pages.company', compact('ads'));
+    }
 }   
