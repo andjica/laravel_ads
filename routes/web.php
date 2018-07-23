@@ -22,7 +22,7 @@ Route::get('/accounttypes', "frontController@get_acctypes");
 
 
 //Ruta za dohvatanje jednog oglasa - nova strana
-Route::get('/ads/{ad}', "frontController@get_ad");
+Route::get('/ad/{ad}', "frontController@get_ad");
 
 
 //Rute kada se korisnik uloguje
