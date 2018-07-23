@@ -5,9 +5,9 @@
    @foreach ($ads as $ad)
   <div class="col-lg-3 col-md-6 mb-4" id="ads">
     <div class="card">
-      @foreach($ad->pictures as $pic)
-        <img class="card-img-top" src="{{asset('/ads/images/'.$pic->src)}}" alt="{{$pic->alt}}">
-      @endforeach
+      
+        <img class="card-img-top" src="{{asset('/ads/images/'.$ad->pictures[0]->src)}}" alt="{{$ad->pictures[0]->alt}}">
+      
       <div class="card-body">
         <h4 class="card-title">{{$ad->title}}</h4>
         <p class="card-text">{{$ad->body}}</p>

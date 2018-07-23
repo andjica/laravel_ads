@@ -16,9 +16,7 @@ class frontController extends Controller
     public function get_dev()
     {
 
-        $ads = Ad::with(['pictures' => function ($query) {
-            $query->limit(1);
-        }])->where('category_id', '1')->paginate(4);
+        $ads = Ad::with('pictures')->where('category_id', '1')->orderBy('created_at', 'desc')->paginate(4);
 
         return view('pages.development', compact('ads'));
     }
@@ -27,7 +25,7 @@ class frontController extends Controller
     {
         $ads = Ad::with(['pictures' => function ($query) {
             $query->limit(1);
-        }])->where('category_id', '2')->paginate(4);
+        }])->where('category_id', '2')->orderBy('created_at', 'desc')->paginate(4);
 
         return view('pages.recruitment', compact('ads'));
     }
@@ -36,7 +34,7 @@ class frontController extends Controller
     {
         $ads = Ad::with(['pictures' => function ($query) {
             $query->limit(1);
-        }])->where('category_id', '3')->paginate(4);
+        }])->where('category_id', '3')->orderBy('created_at', 'desc')->paginate(4);
 
         return view('pages.items', compact('ads'));
     }
@@ -63,7 +61,7 @@ class frontController extends Controller
     {
         $ads = Ad::with(['pictures' => function ($query) {
             $query->limit(1);
-        }])->where('category_id', '4')->paginate(4);
+        }])->where('category_id', '4')->orderBy('created_at', 'desc')->paginate(4);
 
         return view('pages.houses', compact('ads'));
     }
@@ -72,7 +70,7 @@ class frontController extends Controller
     {
         $ads = Ad::with(['pictures' => function ($query) {
             $query->limit(1);
-        }])->where('category_id', '5')->paginate(4);
+        }])->where('category_id', '5')->orderBy('created_at', 'desc')->paginate(4);
 
         return view('pages.cars', compact('ads'));
     }

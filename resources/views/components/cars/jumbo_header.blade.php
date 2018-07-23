@@ -15,11 +15,6 @@
         Auto, Motor, Scooter, Camper, Tractor, of wat dan ook, met een mooie
         uitgebreide advertentie bij <b>IEDERWATWILS</b> verkoopt u uw voertuig supersnel en
         met de meeste winst. Laat vee1 mooie fotoʼs, en een zelfgemaakte video zien dat verkoopt! 
-        <b class="text-white"> 
-            Heeft u nog geen account?? Registreer dan snel en gratis
-          </b>
-            </p>
-        <a href="{{asset('/register')}}" class="btn btn-primary btn-lg">Sign up</a>
       </header>
    
     </div>
