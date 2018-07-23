@@ -32,6 +32,6 @@
       </div>  
     @else
 
-    Nemate oglas
+    <h1 class='text-danger'>You haven't posten an ad to edit</h1>
 
 @endif
