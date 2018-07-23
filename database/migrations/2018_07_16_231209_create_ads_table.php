@@ -19,6 +19,7 @@ class CreateAdsTable extends Migration
             $table->integer('category_id')->unsigned()->index();
             $table->string('title');
             $table->text('body');
+            $table->string('website');
             $table->string('phone');
             $table->dateTime('expires');
             $table->timestamps();

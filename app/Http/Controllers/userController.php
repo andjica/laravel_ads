@@ -29,4 +29,22 @@ class userController extends Controller
         $categories = Category::all();
         return view('pages.user.make_ads', compact('categories'));
     }
+
+    public function destroy()
+    {
+        if (auth()->check())
+        {
+            Ad::destroy(auth()->user()->ad->id);
+            return redirect('/user_profile');
+        }
+
+        dd(request());
+        return redirect()->back();
+    }
+
+    public function showAdEdit()
+    {
+        $ad = Ad::where('user_id',auth()->user()->id)->first();
+        return view('pages.user.edit_ad', compact('ad'));
+    }
 }
