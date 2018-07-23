@@ -9,7 +9,7 @@
               <p class="card-text text-info">{{$ad->body}}</p>
             </div>
             <div class="card-footer">
-              <a href="{{$ad->id}}" class="btn btn-primary">Learn More</a>
+              <a href="{{$ad->id}}" class="btn btn-primary">Zie meer</a>
             </div>
           </div>
          
@@ -23,7 +23,7 @@
               <p class="card-text text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">Zie meer</a>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@
               <p class="card-text text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">Zie meer</a>
             </div>
           </div>
         </div> --}}

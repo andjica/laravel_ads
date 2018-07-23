@@ -11,11 +11,11 @@
 
                 @if ($loop->first)
                   <div class="carousel-item active ">
-                      <img class="d-block img-fluid" src="{{asset('/ads/images/'.$pic->src)}}" style="max-height:920px !important; width: 620px !important;" alt="{{$pic->alt}}">
+                      <img class="d-block img-fluid" src="{{asset('/ads/images/'.$pic->src)}}" style="max-height:420px !important; width: 620px !important;" alt="{{$pic->alt}}">
                   </div>
                 @endif
                   <div class="carousel-item">
-                      <img class="d-block img-fluid" src="{{asset('/ads/images/'.$pic->src)}}" style="max-height:920px !important; width: 620px !important;" alt="{{$pic->alt}}">
+                      <img class="d-block img-fluid" src="{{asset('/ads/images/'.$pic->src)}}" style="max-height:420px !important; width: 620px !important;" alt="{{$pic->alt}}">
                   </div>
 
 
