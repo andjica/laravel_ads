@@ -28,5 +28,8 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('upload-video', function ($user) {
             return $user->account->type->id != '1';
         });
+        Gate::define('edit-delete', function ($user, $ad) {
+            return $user->id == $ad->user->id;
+        });
     }
 }

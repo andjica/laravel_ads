@@ -1,6 +1,9 @@
 <div class="col-lg-7">
-<a href="{{asset('/edit')}}" class='btn btn-success'>Edit</a>
-<a href="{{asset('/delete')}}" class='btn btn-danger'>Delete</a>
+  
+  @can('edit-delete', $ad)
+    <a href="{{asset('/edit')}}" class='btn btn-success'>Edit</a>
+    <a href="{{asset('/delete')}}" class='btn btn-danger'>Delete</a>
+  @endcan
           <div id="carouselExampleIndicators" class="carousel slide my-5" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 @foreach ($ad->pictures as $pic)

@@ -29,7 +29,7 @@
         @endif
 
     
-<form action="{{asset('/edit')}}" method="POST" enctype="multipart/form-data">
+<form action="{{asset('/insert')}}" method="POST" enctype="multipart/form-data">
     @csrf
 <div class="form-group">
     <label for="exampleFormControlInput1" class="text-info">Title</label>
