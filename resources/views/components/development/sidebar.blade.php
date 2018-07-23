@@ -67,7 +67,7 @@
               </div>
       
             </div>
-            <img src="./img/logo.png" class="img-fluid">
+            <img src="{{asset('/img/logo.png')}}" class="img-fluid">
           </div>
 </div>
 

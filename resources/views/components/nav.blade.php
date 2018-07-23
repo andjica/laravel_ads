@@ -5,7 +5,7 @@
     <nav id="sidebar-wrapper" class="bg-dark">
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top"><img src="./img/logo.png" class="img-fluid"/></a>
+        <a class="js-scroll-trigger" href="#page-top"><img src="{{asset('/img/logo.png')}}" class="img-fluid"/></a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#page-top">Home</a>
