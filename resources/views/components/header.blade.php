@@ -2,7 +2,7 @@
   <header class="masthead d-flex">
       <div class="container text-center my-auto">
       
-       <img src="./img/logo.png" class="img-fluid">
+      <img src="{{asset('//img/logo.png')}}" class="img-fluid">
        <h3 class="mb-5 text-info">
          The best Advertising Website in the <b class="text-white">Netherlands</b>
         </h3>

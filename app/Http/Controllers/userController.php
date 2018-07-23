@@ -34,11 +34,13 @@ class userController extends Controller
     {
         if (auth()->check())
         {
-            Ad::destroy(auth()->user()->ad->id);
-            return redirect('/user_profile');
+            if (auth()->user()->ad)
+            {
+                Ad::destroy(auth()->user()->ad->id);
+                return redirect('/user_profile')->with('message','Ad deleted!');
+            }
+            else abort(404);
         }
-
-        dd(request());
         return redirect()->back();
     }
 
