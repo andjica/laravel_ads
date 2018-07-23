@@ -19,6 +19,11 @@
           <li class="list-inline-item">
             <a href="{{asset('/cars')}}">Cars</a>
           </li>
+          @if(auth()->check())
+          <li class="list-inline-item">
+            <a href="{{asset('/logout')}}" class="btn btn-default">Logout</a>
+          </li>
+          @endif
           <li class="list-inline-item">
           
           <a href="mailto:info@iederwatwils.nl" class="btn btn-default">

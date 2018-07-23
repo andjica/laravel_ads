@@ -11,21 +11,22 @@
                 <div class="col-lg-6">
                   <ul class="list-unstyled mb-0">
                     <li>
-                      <a href="{{asset('/make_ads')}}">Make ads</a>
+                      <a href="{{asset('/make_ads')}}">Plaats uw advertentie</a>
                     </li>
                     <li>
-                      <a href="{{asset('/user_ads')}}">See your ads</a>
+                      <a href="{{asset('/user_ads')}}">Bekijk uw advertentie</a>
                     </li>
                     <li>
                       <a href="#">Manipulationg picture</a>
                     </li>
-            
-             
-                
                     <li>
-                      <a href="{{asset('/user_profile')}}">Your profile</a>
+                      <a href="{{asset('/user_profile')}}">Uw profiel</a>
                     </li>
-                  
+                    @if(auth()->check())
+                    <li>
+                      <a href="{{asset('/logout')}}" class="btn btn-danger btn-sm">Logout</a>
+                    </li>
+                    @endif
                   </ul>
                  
               </div>
