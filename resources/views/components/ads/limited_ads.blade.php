@@ -1,5 +1,5 @@
 
-
+@foreach($ads as $ad)
 <div class="col-lg-4 mb-4 mt-4">
           <div class="card h-100 bg-info">
             <h4 class="card-header text-white">{{$ad->title}}</h4>
@@ -17,5 +17,5 @@
           </div>
          
         </div>
-        
+@endforeach        
 
