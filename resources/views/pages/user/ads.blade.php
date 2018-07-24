@@ -1,3 +1,6 @@
+
+
+
 @extends('layout.template')
 @section('appendCss')
 @parent
@@ -6,33 +9,49 @@
 @endsection
 
 @section('top')
+
+ 
     @include('components.ads.nav_ads')
     @include('components.user.top_info')
-    
+
+
+    @if(!auth()->check())
+        @include('components.ads.sign_in')
+    @endif
+
+   
 @endsection
 @section('content')
-<div class="container bg-light">
+
+<div class="container bg-dark">
     <div class="row">
         
-        @include('components.development.sidebar')
+        @include('components.ads.sidebar')
+        @include('components.ads.slider')
         
-        @if ($ad)
+    </div>
+    @if($ad)
+    <div class="row">
+       <div class="col-lg-12">
         
-            
-            @include('components.ads.slider')
-
-            
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-3">
-                </div>
-                <div class="col-lg-9">
-                    @include('components.ads.content_and_map')
-                </div>
-            </div>
-
-        @else
+             @include('components.ads.content_and_map')
+        </div>
+    </div>
+    <div class="row">
+       
+        
+                @include('components.ads.video')
+        
+    </div>
+    <hr>
+    <div class="row">
+      
+        
+        @include('components.ads.limited_ads') 
+        
+    </div>
+      <hr>
+      @else
             <div class="col-lg-9 text-center">
                     
                 <h1 class="text-danger" style="margin-top:150px;">
@@ -45,6 +64,5 @@
             
         @endif
         
-   
 </div>
 @endsection
