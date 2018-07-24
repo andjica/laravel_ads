@@ -19,6 +19,9 @@
           <li class="list-inline-item">
             <a href="{{asset('/cars')}}">Cars</a>
           </li>
+          <li class="list-inline-item">
+            <a href="{{asset('/company')}}">Bedrijfspromotie</a>
+          </li>
           @if(auth()->check())
           <li class="list-inline-item">
             <a href="{{asset('/logout')}}" class="btn btn-default">Logout</a>

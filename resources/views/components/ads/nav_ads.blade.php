@@ -26,6 +26,9 @@
           <a class="js-scroll-trigger" href="{{asset('/cars')}}">Auto's</a>
         </li>
         <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="{{asset('/company')}}">Bedrijfspromotie</a>
+        </li>
+        <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="{{asset('/accounttypes')}}">See account PRO</a>
         </li>
         

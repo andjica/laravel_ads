@@ -9,7 +9,7 @@
         <h1 class="display-4 text-info">IederWatWils - Werving Advertentie</h1>
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
-        <img src="./img/rec1.jpeg" class="img-fluid" alt="img recruitment, iederwatwils">
+        <img src="{{asset('./img/rec1.jpeg')}}" class="img-fluid" alt="werving iederwatwils advertentie">
         <p class="lead text-white p-3 bg-secondary rounded my-3">
         Op zoek naar een nieuwe baan?, uw oude werksituatie is niet meer wat u wenst?
         Via een mooie uitgebreide advertentie bij IEDERWATWILS komt u wellicht in een nieuw werkomgeving terecht?!! 
@@ -26,7 +26,7 @@
         <h1 class="display-4 text-info">IederWatWils - Werving Advertentie</h1>
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
-        <img src="./img/rec1.jpeg" class="img-fluid" alt="img recruitment, iederwatwils">
+        <img src="{{asset('./img/rec1.jpeg')}}" class="img-fluid" alt="werving iederwatwils advertentie">
         <p class="lead text-white p-3 bg-secondary rounded my-3">
         Op zoek naar een nieuwe baan?, uw oude werksituatie is niet meer wat u wenst?
         Via een mooie uitgebreide advertentie bij IEDERWATWILS komt u wellicht in een nieuw werkomgeving terecht?!! <b class="text-info">Als u uw account nog 

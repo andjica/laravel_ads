@@ -7,10 +7,10 @@
     <div class="col-lg-9">
 
    <header class="jumbotron my-4 m-4 bg-white">
-        <h1 class="display-4 text-info"> IederWatWils - Bedrijf promotie</h1>
+        <h1 class="display-4 text-info"> IederWatWils - Bedrijf promotie Advertentie</h1>
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
-        <img src="{{asset('./img/comp.jpeg')}}" class="img-fluid" alt="img autos, iederwatwils">
+        <img src="{{asset('./img/comp.jpeg')}}" class="img-fluid" alt="bedrijf promotie  iederwatwils">
         <p class="lead text-white p-3 bg-danger rounded my-3">
           Kan uw bedrijf een boost gebruiken, of heeft uw bedrijf extra mankracht nodig?
           <b>IederWatWils</b> kan het voor u leveren. Maak een doeltreffende en aantrekkelijke advertentie
@@ -34,7 +34,7 @@
         <h1 class="display-4 text-info"> IederWatWils - Voertuigen Advertentie</h1>
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
-        <img src="{{asset('./img/comp.jpeg')}}" class="img-fluid" alt="img autos, iederwatwils">
+        <img src="{{asset('./img/comp.jpeg')}}" class="img-fluid" alt="bedrijf promotie iederwatwils">
         <p class="lead text-white p-3 bg-danger rounded my-3">
           Kan uw bedrijf een boost gebruiken, of heeft uw bedrijf extra mankracht nodig?
           <b>IederWatWils</b> kan het voor u leveren. Maak een doeltreffende en aantrekkelijke advertentie
