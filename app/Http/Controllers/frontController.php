@@ -16,21 +16,21 @@ class frontController extends Controller
     public function get_dev()
     {
 
-        $ads = Ad::with('pictures')->where('category_id', '1')->orderBy('created_at', 'desc')->paginate(4);
+        $ads = Ad::with('pictures')->where('category_id', '1')->orderBy('created_at', 'desc')->paginate(8);
 
         return view('pages.development', compact('ads'));
     }
 
     public function get_rec()
     {
-        $ads = Ad::with('pictures')->where('category_id', '2')->orderBy('created_at', 'desc')->paginate(4);
+        $ads = Ad::with('pictures')->where('category_id', '2')->orderBy('created_at', 'desc')->paginate(8);
 
         return view('pages.recruitment', compact('ads'));
     }
 
     public function get_ite()
     {
-        $ads = Ad::with('pictures')->where('category_id', '3')->orderBy('created_at', 'desc')->paginate(4);
+        $ads = Ad::with('pictures')->where('category_id', '3')->orderBy('created_at', 'desc')->paginate(8);
 
         return view('pages.items', compact('ads'));
     }
@@ -53,20 +53,20 @@ class frontController extends Controller
 
     public function get_house()
     {
-        $ads = Ad::with('pictures')->where('category_id', '4')->orderBy('created_at', 'desc')->paginate(4);
+        $ads = Ad::with('pictures')->where('category_id', '4')->orderBy('created_at', 'desc')->paginate(8);
 
         return view('pages.houses', compact('ads'));
     }
 
     public function get_car()
     {
-        $ads = Ad::with('pictures')->where('category_id', '5')->orderBy('created_at', 'desc')->paginate(4);
+        $ads = Ad::with('pictures')->where('category_id', '5')->orderBy('created_at', 'desc')->paginate(8);
 
         return view('pages.cars', compact('ads'));
     }
     public function get_com()
     {
-        $ads = Ad::with('pictures')->where('category_id', '6')->orderBy('created_at', 'desc')->paginate(4);
+        $ads = Ad::with('pictures')->orderBy('created_at', 'desc')->paginate(8);
 
         return view('pages.company', compact('ads'));
     }

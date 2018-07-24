@@ -45,9 +45,6 @@
     </div>
     <hr>
     <div class="row">
-      
-        
-        @include('components.ads.limited_ads') 
         
     </div>
       <hr>
