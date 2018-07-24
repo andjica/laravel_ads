@@ -15,6 +15,7 @@
        
         <hr>
         <p class="text-info"></b> {{$ad->body}}</p>
+        <p class="text-info">Website Location</b> {{$ad->website}}</p>
         <p class="text-warning"><b>Posted on: </b><b class="text-info">date iz baze za taj oglas</b></p>
       </div>
       <div class="card-footer">
