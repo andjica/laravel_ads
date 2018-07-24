@@ -22,11 +22,12 @@
    
 @endsection
 @section('content')
+@include('components.user.user_header')
+<div class="container">
 
-<div class="container bg-dark">
-    <div class="row">
+    <div class="row my-4">
         
-        @include('components.ads.sidebar')
+   
         @include('components.ads.slider')
         
     </div>
