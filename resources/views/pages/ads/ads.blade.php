@@ -17,7 +17,7 @@
 @endsection
 @section('content')
 
-<div class="container bg-white">
+<div class="container">
     <div class="row">
         
         @include('components.ads.sidebar')
