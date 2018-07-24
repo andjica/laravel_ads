@@ -10,10 +10,16 @@
         <h1 class="display-4 text-info"> IederWatWils - Development Advertentie</h1>
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
-        <img src="./img/dev1.jpeg" class="img-fluid" alt="img recruitment, iederwatwils">
-        <p class="lead text-white p-3 bg-danger rounded my-3">
-        Set up your website, show your andodir and ios app, show any app that will present you and your work. 
-        <b>Free and securely place your ad with 5 images and description of your app! </b>
+        <img src="{{asset('./img/dev1.jpeg')}}" class="img-fluid" alt="development iederwatwils advertentie">
+        <p class="text-info"> Stel uw website in, toon uw android en iOS-app, 
+        toon elke app die u en uw werk presenteert. 
+        Plaats uw advertentie gratis en veilig met 5 
+        afbeeldingen en een beschrijving van uw app! 
+        <b>Als u uw account nog niet heeft gemaakt, doet u het 
+        zeer snel en gratis om uw advertentie op te laten:</b>
+
+            </p>
+        <a href="{{asset('/register')}}" class="btn btn-primary btn-lg">Sign up</a>
       </header>
      
     </div>
@@ -25,13 +31,14 @@
         <h1 class="display-4 text-info"> IederWatWils - Development Advertentie</h1>
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
-        <img src="./img/dev1.jpeg" class="img-fluid" alt="img recruitment, iederwatwils">
-        <p class="lead text-white p-3 bg-danger rounded my-3">
-        Set up your website, show your andodir and ios app, show any app that will present you and your work. 
-        <b>Free and securely place your ad with 5 images and description of your app! </b>
- 
-           <b class="text-white"> If you have not yet created your account, do it very quickly 
-            and free to keep your ad on:</b>
+        <img src="{{asset('./img/dev1.jpeg')}}" class="img-fluid" alt="development iederwatwils advertentie">
+        <p class="text-info">Stel uw website in, toon uw android en iOS-app, 
+        toon elke app die u en uw werk presenteert. 
+        Plaats uw advertentie gratis en veilig met 5 
+        afbeeldingen en een beschrijving van uw app! 
+        <b>Als u uw account nog niet heeft gemaakt, doet u het 
+        zeer snel en gratis om uw advertentie op te laten:</b>
+
             </p>
         <a href="{{asset('/register')}}" class="btn btn-primary btn-lg">Sign up</a>
       </header>

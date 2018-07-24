@@ -8,6 +8,7 @@
 @section('top')
 
     @include('components.ads.nav_ads')
+    @include('components.top_header')
 
     @if(!auth()->check())
         @include('components.ads.sign_in')
@@ -17,7 +18,7 @@
 @endsection
 @section('content')
 
-<div class="container bg-dark">
+<div class="container">
     <div class="row">
         
         @include('components.ads.sidebar')
