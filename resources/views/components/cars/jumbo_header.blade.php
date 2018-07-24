@@ -10,7 +10,7 @@
         <h1 class="display-4 text-info"> IederWatWils - Voertuigen Advertentie</h1>
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
-        <img src="./img/car1.jpeg" class="img-fluid" alt="img autos, iederwatwils">
+        <img src="{{asset('./img/car1.jpeg')}}" class="img-fluid" alt="img autos, iederwatwils">
         <p class="lead text-white p-3 bg-danger rounded my-3">
         Auto, Motor, Scooter, Camper, Tractor, of wat dan ook, met een mooie
         uitgebreide advertentie bij <b>IEDERWATWILS</b> verkoopt u uw voertuig supersnel en
@@ -33,7 +33,7 @@
         <h1 class="display-4 text-info"> IederWatWils - Voertuigen Advertentie</h1>
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
-        <img src="./img/car1.jpeg" class="img-fluid" alt="img autos, iederwatwils">
+        <img src="{{asset('./img/car1.jpeg')}}" class="img-fluid" alt="img autos, iederwatwils">
         <p class="lead text-white p-3 bg-danger rounded my-3">
         Auto, Motor, Scooter, Camper, Tractor, of wat dan ook, met een mooie
         uitgebreide advertentie bij <b>IEDERWATWILS</b> verkoopt u uw voertuig supersnel en

@@ -10,7 +10,7 @@
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
 
-        <img src="./img/sec1.jpeg" class="img-fluid" alt="img recruitment, iederwatwils">
+        <img src="{{asset('./img/sec1.jpeg')}}" class="img-fluid" alt="tweede hands iederwatwils advertientie">
         <p class="lead text-white p-3 bg-secondary rounded my-3">
 
            U bent uw spulletjes zat, maar gunt het een 2e kans?, u hebt teveel en wilt iets minder?
@@ -32,7 +32,7 @@ Via IEDERWATWILS profiteert u van de beste winst, en maakt u mooie mensen blij m
         <h1 class="display-4 text-info">IederWatwils - Tweede Hands</h1>
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
-        <img src="./img/sec1.jpeg" class="img-fluid" alt="img recruitment, iederwatwils">
+        <img src="./img/sec1.jpeg" class="img-fluid" alt="tweede hands iederwatwils advertientie">
         <p class="lead text-white p-3 bg-secondary rounded my-3">
 
            

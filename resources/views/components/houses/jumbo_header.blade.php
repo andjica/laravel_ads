@@ -10,7 +10,7 @@
         <h1 class="display-4 text-primary">Welcome to Houses ADS</h1>
         <a class="btn btn-primary btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
-        <img src="./img/house1.jpg" class="img-fluid" alt="img recruitment, iederwatwils">
+        <img src="{{asset('./img/house1.jpg')}}" class="img-fluid" alt="houses iederwatwils advertentie">
         <p class="lead text-light p-3 bg-primary rounded my-3">
        
         Als je je huis nog niet hebt verkocht, IederWatWils is een echte advertentie. Maak een advertentie! Toon uw huis dat u wilt verkopen met veel foto's, video's en locatie. 
@@ -32,7 +32,7 @@
         <h1 class="display-4 text-primary">IederWatWils - Huis Advertentie</h1>
         <a class="btn btn-primary btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Find Out More</a>
         <br>
-        <img src="./img/house1.jpg" class="img-fluid" alt="img recruitment, iederwatwils">
+        <img src="{{asset('./img/house1.jpg')}}" class="img-fluid" alt="houses iederwatwils advertentie">
         <p class="lead text-light p-3 bg-primary rounded my-3">
             Maak van uw huis een droomhuis voor anderen, of koop uw droomhuis van een ander.
             Via de mooiste zelfgemaakte video's bij <b>IederWatWils</b>
