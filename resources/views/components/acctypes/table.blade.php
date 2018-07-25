@@ -52,8 +52,8 @@
     <tr>
       <th scope="row" class="text-white">Price</th>
       <td><b class="text-white">/</b></td>
-      <td><b class="text-secondary">€ 11,69</b></td>
-      <td><b class="text-secondary">€ 21,00</b></td>
+      <td><b class="text-secondary">€ 14,95</b></td>
+      <td><b class="text-secondary">€ 29,95</b></td>
     </tr>
   </tbody>
 </table>
