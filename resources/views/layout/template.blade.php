@@ -21,6 +21,12 @@
 
     <!-- Custom CSS -->
     <link href="{{asset('/')}}css/stylish-portfolio.min.css" rel="stylesheet">
+    
+    <script>
+      const BASE_URL = "{{asset('/')}}";
+      const TOKEN = "{{csrf_token()}}";
+    </script>
+
     @show
   </head>
 

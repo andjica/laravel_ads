@@ -27,4 +27,9 @@ class Ad extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function sub()
+    {
+        return $this->belongsTo(SubCategory::class, 'sub_id');
+    }
 }
