@@ -29,6 +29,10 @@ $(document).ready(function(){
                }
            });
        }
+       else
+       {
+        $("#sub").empty();
+       }
     })
 
     $(".sub-ajax").on('click', function(e){
