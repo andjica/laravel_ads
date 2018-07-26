@@ -54,8 +54,9 @@
                Voertuigen
               </a>
               <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="portfolio-1-col.html">Auto's</a>
-                <a class="dropdown-item" href="portfolio-2-col.html">Vaartuigen</a>  
+                @foreach($links as $link)
+                  <a class="dropdown-item sub-ajax" href="{{$link->name}}" data-id="{{$link->id}}">{{$link->name}}</a>
+                @endforeach
               </div>
             </li>
                     <li class="nav-item">

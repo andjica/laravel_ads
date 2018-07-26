@@ -9,6 +9,7 @@ use App\Video;
 use App\Picture;
 
 use App\User;
+use App\SubCategory;
 
 class AdController extends Controller
 {
@@ -45,6 +46,7 @@ class AdController extends Controller
             'phone' => 'nullable|numeric',
             'category' => 'required',
             'website' => 'nullable',
+            'sub_id' => 'sometimes',
             'pictures.*' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'pictures' => $picture_rule,
             'videos.*' => 'sometimes|file|mimetypes:video/mp4,video/ogg,video/avi,video/quicktime|max:20000',
@@ -60,7 +62,10 @@ class AdController extends Controller
 
         $data = request()->validate($rules, $messages);
 
+
         //KREIRA NOVI OGLAS I SMESTA GA U BAZU
+        $sub = request()->sub_id ?? null;
+
         $ad = Ad::create([
             'user_id' => auth()->user()->id,
             'title' => $data['title'],
@@ -68,6 +73,7 @@ class AdController extends Controller
             'phone' => $data['phone'],
             'website' => $data['website'],
             'category_id' => $data['category'],
+            'sub_id' => $sub,
             'expires' => \Carbon\Carbon::now()->addMonth()
         ]);
 
@@ -157,5 +163,17 @@ class AdController extends Controller
 
         return redirect('/user_profile')->with('message','Your ad is successfully changed');
 
+    }
+
+    public function category()
+    {
+        return SubCategory::all();
+    }
+
+    public function sub($id)
+    {
+        $ads = Ad::with('pictures','user')->where('sub_id',$id)->get();
+
+        return $ads;
     }
 }

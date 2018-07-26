@@ -17,6 +17,9 @@ Route::get('/cars', "frontController@get_car");
 
 Route::get('/company', "frontController@get_com");
 
+Route::post('/category', 'AdController@category');
+Route::get('/sub-cat/{id}', 'AdController@sub');
+
 
 Route::get('/accounttypes', "frontController@get_acctypes");
 

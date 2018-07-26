@@ -38,11 +38,15 @@
   </div>
             <div class="form-group">
              <label for="exampleFormControlSelect1" class="text-info">Choice category</label>   
-                <select name="category" class="form-control text-secondary">
+                <select id="category" name="category" class="form-control text-secondary">
+                    <option value="0">Pick...</option>
                     @foreach ($categories as $c)
                         <option value="{{$c->id}}">{{$c->category}}</option>
                     @endforeach
                 </select>
+            </div>
+            <div id="sub">
+                {{-- MESTO ZA DROPDOWN SUBKATEGORIJE --}}
             </div>
             <div class="form-group">
             <label for="exampleFormControlTextarea1" class="text-info">Description of your Ad</label>

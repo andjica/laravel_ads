@@ -10,4 +10,9 @@ class Category extends Model
     {
         return $this->hasMany(Ad::class);
     }
+
+    public function child()
+    {
+        return $this->hasMany(SubCategory::class, 'parent_id');
+    }
 }
