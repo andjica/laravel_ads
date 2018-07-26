@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 23, 2018 at 05:58 PM
+-- Generation Time: Jul 26, 2018 at 06:08 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -42,7 +42,7 @@ CREATE TABLE `accounts` (
 --
 
 INSERT INTO `accounts` (`id`, `user_id`, `account_type_id`, `valid_until`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, NULL, '2018-07-23 12:29:25', '2018-07-23 12:29:25');
+(1, 1, 1, NULL, '2018-07-26 12:52:24', '2018-07-26 12:52:24');
 
 -- --------------------------------------------------------
 
@@ -76,6 +76,7 @@ CREATE TABLE `ads` (
   `id` int(10) UNSIGNED NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL,
   `category_id` int(10) UNSIGNED NOT NULL,
+  `sub_id` int(11) DEFAULT '1',
   `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `body` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `website` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -84,6 +85,13 @@ CREATE TABLE `ads` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `ads`
+--
+
+INSERT INTO `ads` (`id`, `user_id`, `category_id`, `sub_id`, `title`, `body`, `website`, `phone`, `expires`, `created_at`, `updated_at`) VALUES
+(1, 1, 5, 1, 'Ad 1', 'sadasdasdas', 'www.sajt.com', '123456', '2018-08-26 14:52:40', '2018-07-26 12:52:40', '2018-07-26 12:52:40');
 
 -- --------------------------------------------------------
 
@@ -103,10 +111,10 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `category`, `created_at`, `updated_at`) VALUES
-(1, 'Development ', NULL, NULL),
-(2, 'Werving', NULL, NULL),
-(3, 'Tweend Hands', NULL, NULL),
-(4, 'Houses ', NULL, NULL),
+(1, 'Recruitment', NULL, NULL),
+(2, 'Development', NULL, NULL),
+(3, 'Items', NULL, NULL),
+(4, 'Houses', NULL, NULL),
 (5, 'Cars', NULL, NULL);
 
 -- --------------------------------------------------------
@@ -132,9 +140,10 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (4, '2014_10_12_100000_create_password_resets_table', 1),
 (5, '2015_07_18_013023_create_accounts_table', 1),
 (6, '2017_07_16_233857_create_categories_table', 1),
-(7, '2018_07_16_231209_create_ads_table', 1),
-(8, '2018_07_16_232932_create_pictures_table', 1),
-(9, '2018_07_16_233048_create_videos_table', 1);
+(7, '2018_07_15_140220_create_sub_categories_table', 1),
+(8, '2018_07_16_231209_create_ads_table', 1),
+(9, '2018_07_16_232932_create_pictures_table', 1),
+(10, '2018_07_16_233048_create_videos_table', 1);
 
 -- --------------------------------------------------------
 
@@ -161,6 +170,13 @@ CREATE TABLE `pictures` (
   `alt` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Ad picture'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `pictures`
+--
+
+INSERT INTO `pictures` (`id`, `ad_id`, `src`, `alt`) VALUES
+(1, 1, 'default_ad_picture.png', 'Ad picture');
+
 -- --------------------------------------------------------
 
 --
@@ -180,7 +196,29 @@ CREATE TABLE `roles` (
 
 INSERT INTO `roles` (`id`, `role`, `created_at`, `updated_at`) VALUES
 (1, 'admin', NULL, NULL),
-(2, 'user\r\n', NULL, NULL);
+(2, 'user', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sub_categories`
+--
+
+CREATE TABLE `sub_categories` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `parent_id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `sub_categories`
+--
+
+INSERT INTO `sub_categories` (`id`, `parent_id`, `name`, `created_at`, `updated_at`) VALUES
+(1, 5, 'Water', NULL, NULL),
+(2, 5, 'Land', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -204,7 +242,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `role_id`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'admin@gmail.com', '$2y$10$Kq/F4A63p9weXLenrzI81ObqfMz2jTHjCr9R3J7VSWCrqPLm.dXqm', 2, '6KvgPbqGstNvxEyQf3p44s3XqWvmJeE97ffULnoPPXWABAi5awR2aGVD4Ydz', '2018-07-23 12:29:25', '2018-07-23 12:29:25');
+(1, 'admin', 'admin@gmail.com', '$2y$10$AUtN/1Vd9ysiRSykfTEXC.IuTxP6fOMxUpcAcgCF5vFgv2LfTZQAa', 2, NULL, '2018-07-26 12:52:24', '2018-07-26 12:52:24');
 
 -- --------------------------------------------------------
 
@@ -276,6 +314,13 @@ ALTER TABLE `roles`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `sub_categories`
+--
+ALTER TABLE `sub_categories`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `sub_categories_parent_id_index` (`parent_id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -310,7 +355,7 @@ ALTER TABLE `account_types`
 -- AUTO_INCREMENT for table `ads`
 --
 ALTER TABLE `ads`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -322,18 +367,24 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `pictures`
 --
 ALTER TABLE `pictures`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `roles`
 --
 ALTER TABLE `roles`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `sub_categories`
+--
+ALTER TABLE `sub_categories`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
@@ -371,6 +422,12 @@ ALTER TABLE `ads`
 --
 ALTER TABLE `pictures`
   ADD CONSTRAINT `pictures_ad_id_foreign` FOREIGN KEY (`ad_id`) REFERENCES `ads` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `sub_categories`
+--
+ALTER TABLE `sub_categories`
+  ADD CONSTRAINT `sub_categories_parent_id_foreign` FOREIGN KEY (`parent_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `users`

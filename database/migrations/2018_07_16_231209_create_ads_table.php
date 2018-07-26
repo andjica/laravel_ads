@@ -17,6 +17,7 @@ class CreateAdsTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned()->index();
             $table->integer('category_id')->unsigned()->index();
+            $table->integer('sub_id')->nullable()->default('1');
             $table->string('title');
             $table->text('body');
             $table->string('website');
