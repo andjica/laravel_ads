@@ -43,8 +43,8 @@ class AdController extends Controller
         $rules = [
             'title' => 'required',
             'body' => 'required|max:500',
+            'category' => 'required|not_in:0',
             'phone' => 'nullable|numeric',
-            'category' => 'required',
             'website' => 'nullable',
             'sub_id' => 'sometimes',
             'pictures.*' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
