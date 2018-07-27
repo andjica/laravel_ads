@@ -28,6 +28,16 @@
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="{{asset('/company')}}">Bedrijfspromotie</a>
         </li>
+        {{-- PROVERAVA DA LI IMA SESIJA I NA OSNOVU TOGA SETUJE --}}
+        @if(auth()->check())
+          <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="{{asset('user_profile')}}">Go to your dashboard</a>
+          </li>
+          @else
+          <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="{{asset('/login')}}">Sign up/Sign in</a>
+          </li>
+        @endif
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="{{asset('/accounttypes')}}">See account PRO</a>
         </li>

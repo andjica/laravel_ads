@@ -1,10 +1,12 @@
 @extends('layout.template')
 
 @section('content')
-@include('components.nav')
+@include('components.ads.nav_ads')
+@include('components.top_header')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+    @include('components.ads.sidebar')
+        <div class="col-md-8 my-4">
             <div class="card">
                 <div class="card-header">
                 @if(!empty(session('message')))
