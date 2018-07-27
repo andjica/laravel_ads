@@ -20,8 +20,8 @@ class CreateAdsTable extends Migration
             $table->integer('sub_id')->nullable()->default('1');
             $table->string('title');
             $table->text('body');
-            $table->string('website');
-            $table->string('phone');
+            $table->string('website')->nullable();
+            $table->string('phone')->nullable();
             $table->dateTime('expires');
             $table->timestamps();
 
