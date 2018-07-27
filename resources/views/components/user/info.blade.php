@@ -6,6 +6,25 @@
     <p class="alert alert-success" role="alert">{{session('message')}}</p>
 
     @endif
+
+    @if ($message = Session::get('success'))
+    <div class="w3-panel w3-green w3-display-container">
+        <span onclick="this.parentElement.style.display='none'"
+        class="w3-button w3-green w3-large w3-display-topright">&times;</span>
+        <p>{!! $message !!}</p>
+    </div>
+    <?php Session::forget('success');?>
+    @endif
+
+    @if ($message = Session::get('error'))
+    <div class="w3-panel w3-red w3-display-container">
+        <span onclick="this.parentElement.style.display='none'"
+        class="w3-button w3-red w3-large w3-display-topright">&times;</span>
+        <p>{!! $message !!}</p>
+    </div>
+    <?php Session::forget('error');?>
+    @endif
+    
 <h2 class="text-info">Uw accountgegevens:</h2>
 <ul class="list-group list-group-flush text-muted">
     <li class="list-group-item">Uw username: <b>{{$user->name}}</b></li>

@@ -55,5 +55,40 @@
       <td><b class="text-secondary">€ 14,95</b></td>
       <td><b class="text-secondary">€ 29,95</b></td>
     </tr>
+    @if(auth()->check())
+      <tr>
+        <td></td>
+        <td></td>
+        <td> 
+          @if(auth()->user()->account->type->id == 2 || auth()->user()->account->type->id == 3)
+          <span class="badge badge-success">Owned</span>
+            @else
+            <form method="POST" action="{{asset('/upgrade-pro')}}">
+              @csrf
+              <input type="image" name="submit" border="0"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
+              alt="Buy Now">
+              <img alt="" border="0" width="1" height="1"
+              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+            </form>
+            
+            @endif
+          </td>
+          <td>
+              @if(auth()->user()->account->type->id != 3)
+              <form method="POST" action="{{asset('/upgrade-super')}}">
+                @csrf
+                <input type="image" name="submit" border="0"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
+                alt="Buy Now">
+                <img alt="" border="0" width="1" height="1"
+                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+              </form>
+              @else
+                <span class="badge badge-success">Owned</span>
+              @endif
+            </td>
+        </tr>
+      @endif
   </tbody>
 </table>

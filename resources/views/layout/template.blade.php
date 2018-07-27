@@ -21,6 +21,7 @@
 
     <!-- Custom CSS -->
     <link href="{{asset('/')}}css/stylish-portfolio.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     
     <script>
       const BASE_URL = "{{asset('/')}}";
