@@ -51,3 +51,11 @@ Route::get('/admin_ads', "adminController@get_ads");
 Route::get('/admin_user', "adminController@get_user");
 
 Route::post('/insert', 'AdController@store'); //Ruta za dodavanje novog oglasa kao korisnik
+
+
+//PAYPAL RUTE
+Route::post('/upgrade-pro', 'PaymentController@pro'); // PLACANJE ZA PRO
+Route::post('/upgrade-super', 'PaymentController@superPro'); // PLACANJE ZA SUPER-PRO
+
+Route::get('status-pro', 'PaymentController@getPaymentStatusPro'); //PROVERAVA STATUS PLACANJA
+Route::get('status-super', 'PaymentController@getPaymentStatusSuper'); //PROVERAVA STATUS PLACANJA

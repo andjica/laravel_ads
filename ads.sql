@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 26, 2018 at 06:08 PM
+-- Generation Time: Jul 27, 2018 at 05:25 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -36,13 +36,6 @@ CREATE TABLE `accounts` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `accounts`
---
-
-INSERT INTO `accounts` (`id`, `user_id`, `account_type_id`, `valid_until`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, NULL, '2018-07-26 12:52:24', '2018-07-26 12:52:24');
 
 -- --------------------------------------------------------
 
@@ -79,19 +72,12 @@ CREATE TABLE `ads` (
   `sub_id` int(11) DEFAULT '1',
   `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `body` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `website` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `phone` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `website` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `expires` datetime NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `ads`
---
-
-INSERT INTO `ads` (`id`, `user_id`, `category_id`, `sub_id`, `title`, `body`, `website`, `phone`, `expires`, `created_at`, `updated_at`) VALUES
-(1, 1, 5, 1, 'Ad 1', 'sadasdasdas', 'www.sajt.com', '123456', '2018-08-26 14:52:40', '2018-07-26 12:52:40', '2018-07-26 12:52:40');
 
 -- --------------------------------------------------------
 
@@ -111,8 +97,8 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `category`, `created_at`, `updated_at`) VALUES
-(1, 'Recruitment', NULL, NULL),
-(2, 'Development', NULL, NULL),
+(1, 'Development', NULL, NULL),
+(2, 'Recruitment', NULL, NULL),
 (3, 'Items', NULL, NULL),
 (4, 'Houses', NULL, NULL),
 (5, 'Cars', NULL, NULL);
@@ -143,7 +129,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (7, '2018_07_15_140220_create_sub_categories_table', 1),
 (8, '2018_07_16_231209_create_ads_table', 1),
 (9, '2018_07_16_232932_create_pictures_table', 1),
-(10, '2018_07_16_233048_create_videos_table', 1);
+(10, '2018_07_16_233048_create_videos_table', 1),
+(11, '2018_07_27_143134_create_purchases_table', 1);
 
 -- --------------------------------------------------------
 
@@ -170,12 +157,21 @@ CREATE TABLE `pictures` (
   `alt` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Ad picture'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `pictures`
+-- Table structure for table `purchases`
 --
 
-INSERT INTO `pictures` (`id`, `ad_id`, `src`, `alt`) VALUES
-(1, 1, 'default_ad_picture.png', 'Ad picture');
+CREATE TABLE `purchases` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `user_id` int(10) UNSIGNED NOT NULL,
+  `bought` int(10) UNSIGNED NOT NULL,
+  `date_of_purchase` datetime NOT NULL,
+  `valid_until` datetime NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -236,13 +232,6 @@ CREATE TABLE `users` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `role_id`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'admin@gmail.com', '$2y$10$AUtN/1Vd9ysiRSykfTEXC.IuTxP6fOMxUpcAcgCF5vFgv2LfTZQAa', 2, NULL, '2018-07-26 12:52:24', '2018-07-26 12:52:24');
 
 -- --------------------------------------------------------
 
@@ -308,6 +297,14 @@ ALTER TABLE `pictures`
   ADD KEY `pictures_ad_id_index` (`ad_id`);
 
 --
+-- Indexes for table `purchases`
+--
+ALTER TABLE `purchases`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `purchases_user_id_index` (`user_id`),
+  ADD KEY `purchases_bought_index` (`bought`);
+
+--
 -- Indexes for table `roles`
 --
 ALTER TABLE `roles`
@@ -343,7 +340,7 @@ ALTER TABLE `videos`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `account_types`
@@ -355,7 +352,7 @@ ALTER TABLE `account_types`
 -- AUTO_INCREMENT for table `ads`
 --
 ALTER TABLE `ads`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -367,13 +364,19 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `pictures`
 --
 ALTER TABLE `pictures`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `purchases`
+--
+ALTER TABLE `purchases`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `roles`
@@ -391,7 +394,7 @@ ALTER TABLE `sub_categories`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `videos`
@@ -422,6 +425,13 @@ ALTER TABLE `ads`
 --
 ALTER TABLE `pictures`
   ADD CONSTRAINT `pictures_ad_id_foreign` FOREIGN KEY (`ad_id`) REFERENCES `ads` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `purchases`
+--
+ALTER TABLE `purchases`
+  ADD CONSTRAINT `purchases_bought_foreign` FOREIGN KEY (`bought`) REFERENCES `account_types` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `purchases_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `sub_categories`
