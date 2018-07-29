@@ -27,11 +27,11 @@
 
     <div class="row my-4">
         
-   
+    @if($ad)
         @include('components.ads.slider')
         
     </div>
-    @if($ad)
+    
     <div class="row">
        <div class="col-lg-12">
         

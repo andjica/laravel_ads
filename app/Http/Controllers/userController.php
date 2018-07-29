@@ -17,7 +17,6 @@ class userController extends Controller
     public function index(){
 
         $ad = Ad::with('user','pictures','videos')->where('user_id','=',auth()->user()->id)->first();
-        dd($ad);
         return view('pages.user.ads', compact('ad'));
     }
     public function get_user(){
