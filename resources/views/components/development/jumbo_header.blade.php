@@ -11,7 +11,7 @@
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Meer te weten komen</a>
         <br>
         <img src="{{asset('./img/dev1.jpeg')}}" class="img-fluid" alt="development iederwatwils advertentie">
-        <p class="lead text-white p-3 bg-danger rounded my-3"> Stel uw website in, toon uw android en iOS-app, 
+        <p class="lead text-primary p-3 rounded my-3"> Stel uw website in, toon uw android en iOS-app, 
         toon elke app die u en uw werk presenteert. 
         Plaats uw advertentie gratis en veilig met 5 
         afbeeldingen en een beschrijving van uw app of website! 
@@ -32,7 +32,7 @@
         <a class="btn btn-danger btn-sm mb-3 js-scroll-trigger text-white" href="#ads">Meer te weten komen</a>
         <br>
         <img src="{{asset('./img/dev1.jpeg')}}" class="img-fluid" alt="development iederwatwils advertentie">
-        <p class="lead text-white p-3 bg-danger rounded my-3">Stel uw website in, toon uw android en iOS-app, 
+        <p class="lead text-primary p-3 rounded my-3">Stel uw website in, toon uw android en iOS-app, 
         toon elke app die u en uw werk presenteert. 
         Plaats uw advertentie gratis en veilig met 5 
         afbeeldingen en een beschrijving van uw app! 

@@ -17,9 +17,6 @@
                       <a href="{{asset('/user_ads')}}">Bekijk uw advertentie</a>
                     </li>
                     <li>
-                      <a href="#">Manipulationg picture</a>
-                    </li>
-                    <li>
                       <a href="{{asset('/user_profile')}}">Uw profiel</a>
                     </li>
                     @if(auth()->check())
