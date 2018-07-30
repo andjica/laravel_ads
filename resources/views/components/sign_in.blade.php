@@ -11,7 +11,8 @@
 				<label for="inputPassword2" class="sr-only">Password</label>
 				<input type="password" class="form-control" id="inputPassword2" placeholder="Password" name="password">
 			  </div>
-			<button type="submit" class="btn btn-danger mb-2">Sing in</button> &nbsp; &nbsp; &nbsp; <a href="{{asset('/register')}}" class="btn btn-info mb-2">Sign up</a>
+			<button type="submit" class="btn btn-danger mb-2">Login</button> &nbsp; &nbsp; &nbsp; 
+			<a href="{{asset('/register')}}" class="btn btn-info mb-2">Aanmelden</a>
         
 			
 		</form>

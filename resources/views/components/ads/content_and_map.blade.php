@@ -7,9 +7,9 @@
             <div class="card-body">
               <p class="text-info">
               {{$ad->body}}</p>
-              <p class="text-muted">Posted by <b>{{$ad->user->name}} </b>on {{$ad->created_at}}</p>
+              <p class="text-muted">Geplaatst door<b>{{$ad->user->name}} </b>op  {{$ad->created_at}}</p>
               <hr>
-              <h4 class="text-muted">Telefoon nummer: <b class="text-info">{{$ad->phone}}</b></h4>
+              <h4 class="text-muted">Telefoonnummer: <b class="text-info">{{$ad->phone}}</b></h4>
               <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
             </div>
           </div>

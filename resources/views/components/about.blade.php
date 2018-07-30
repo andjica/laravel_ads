@@ -3,7 +3,7 @@
       <div class="container text-center text-info">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h2>About IederWatWils</h2>
+            <h2>Over IederWatWils</h2>
             <p class="lead mb-5 text-danger">
             Bied de beste en meest uitgebreide manier van adverteren.
 Bedrijfspromotie, onroerend en roerend goed, 2e hands en nieuwe artikelen, ALLES verkoopt beter via IEDERWATWILS.
@@ -12,11 +12,12 @@ Door het bijvoegen van mooie foto’s, zelfgemaakte video’s, en de juiste info
 IEDERWATWILS IS ADVERTEREN 2.0!! <b> Bekijk onze categorieën</b>:
               <a href="https://unsplash.com/"></a></p>
             <ul class="list-inline">
-            <li class="list-inline-item"><a class="btn btn-danger btn-xl m-2" href="{{asset('/development')}}">Development</a></li>
-            <li class="list-inline-item"><a class="btn btn-danger btn-xl m-2" href="{{asset('/recruitment')}}">Reqruitment</a></li>
-            <li class="list-inline-item"><a class="btn btn-danger btn-xl m-2" href="{{asset('/items')}}">Tweede Hands</a></li>
+            <li class="list-inline-item"><a class="btn btn-danger btn-xl m-2" href="{{asset('/development')}}">Ontwikkeling</a></li>
+            <li class="list-inline-item"><a class="btn btn-danger btn-xl m-2" href="{{asset('/recruitment')}}">Werving</a></li>
+            <li class="list-inline-item"><a class="btn btn-danger btn-xl m-2" href="{{asset('/items')}}">Tweedehands</a></li>
             <li class="list-inline-item"><a class="btn btn-danger btn-xl m-2" href="{{asset('/cars')}}">Voertuigen</a></li>
-            <li class="list-inline-item"><a class="btn btn-danger btn-xl m-2" href="{{asset('/houses')}}">Vastgoed</a> </li> 
+            <li class="list-inline-item"><a class="btn btn-danger btn-xl m-2" href="{{asset('/houses')}}"> Onroerend goed</a> </li> 
+            <li class="list-inline-item"><a class="btn btn-danger btn-xl m-2" href="{{asset('/company')}}"> Bedrijfspromotie</a> </li> 
             </ul>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     

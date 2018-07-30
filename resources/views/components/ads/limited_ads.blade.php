@@ -5,11 +5,11 @@
             <h4 class="card-header text-white">{{$ad->title}}</h4>
             <div class="card-body bg-white">
             
-            <p class="card-text text-info">Telefoon nummer:{{$ad->phone}}</p>
+            <p class="card-text text-info">Telefoonnummer:{{$ad->phone}}</p>
              
             <img class="card-img-top" src="{{asset('/ads/images/'.$ad->pictures[0]->src)}}" alt="{{$ad->pictures[0]->alt}}">
-            <p class="my-4 text-warning">Posted at: {{$ad->created_at}}</p>
-            <p class="text-warning">Posted by: {{$ad->user->name}} </p>
+            <p class="my-4 text-warning">Geplaatst op: {{$ad->created_at}}</p>
+            <p class="text-warning">Geplaatst door: {{$ad->user->name}} </p>
             </div>
             <div class="card-footer">
               <a href="{{$ad->id}}" class="btn btn-primary">Zie meer</a>

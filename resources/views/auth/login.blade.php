@@ -36,7 +36,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Wachtwoord') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
@@ -53,7 +53,7 @@
                             <div class="col-md-6 offset-md-4">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Onthoud mijn gegevens') }}
                                     </label>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                         <div class="col-md-8 offset-md-4">
                             
                     <span>
-                        Don't have account yet? Register <a href="{{asset('/register')}}">here!</a>
+                        Heeft u nog geen account? Meld je dan nu hier <a href="{{asset('/register')}}">aan!</a>
                     </span>
                         </div>
                     </form>

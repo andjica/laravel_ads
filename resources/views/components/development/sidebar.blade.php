@@ -17,9 +17,6 @@
                       <a href="{{asset('/user_ads')}}">Bekijk uw advertentie</a>
                     </li>
                     <li>
-                      <a href="#">Manipulationg picture</a>
-                    </li>
-                    <li>
                       <a href="{{asset('/user_profile')}}">Uw profiel</a>
                     </li>
                     @if(auth()->check())
@@ -40,13 +37,13 @@
                 <div class="col-lg-6">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                      <a href="{{asset('/development')}}">Development</a>
+                      <a href="{{asset('/development')}}">Ontwikkeling</a>
                     </li>
                     <li class="nav-item">
-                      <a href="{{asset('/recruitment')}}">Recruitment</a>
+                      <a href="{{asset('/recruitment')}}">Werving</a>
                     </li>
                     <li class="nav-item">
-                      <a href="{{asset('/items')}}">Second Hands</a>
+                      <a href="{{asset('/items')}}">Tweedehands</a>
                     </li>
                    
                     <li class="nav-item dropdown">
@@ -60,7 +57,7 @@
               </div>
             </li>
                     <li class="nav-item">
-                      <a href="{{asset('/houses')}}">Houses</a>
+                      <a href="{{asset('/houses')}}">Huizen / Onroerend goed</a>
                     </li>
                   
                   </ul>

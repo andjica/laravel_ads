@@ -1,7 +1,7 @@
 <section class="p-2 bg-dark text-white text-center" id="sign">
 
       <div class="container text-center">
-        <h4 class="mb-4">Welcome to User Panel...</h4>
+        <h4 class="mb-4">Welcome in uw gebruikerspaneel</h4>
         <p class="lead text-info">
         Welkom bij het gebruikerspaneel! Met uw <b>gratis account</b> kunt u een advertentie maken die een maand meegaat en een titel, 
         inhoud, vijf afbeeldingen en uw telefoonnummer heeft.<br>

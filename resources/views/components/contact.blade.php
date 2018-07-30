@@ -32,7 +32,7 @@
 				<textarea rows="10" cols="100" class="form-control" name="message" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
 			  </div>
 			 <div class="form-group mx-sm-5 mb-2">
-				<input type="submit" class="btn btn-danger mb-2">
+				<input type="submit" class="btn btn-danger mb-2" value="Verzend">
 				
 			  </div>
 			
@@ -48,13 +48,13 @@
 			  </address>
 			<address>
 				<abbr title="Web site">Web site:</abbr>
-				<a href="http://dfambusiness.com/">//</a>
+				<a href="http://www.iederwatwils.nl/" class="text-danger">www.iederwatwils.nl</a>
 			  </address>
 			  <address>
 				<abbr title="Email">Email:</abbr>
-				<a href="mailto:info@iederwatwils.nl">info@iederwatwils.nl</a>
+				<a href="mailto:info@iederwatwils.nl" class="text-danger">info@iederwatwils.nl</a>
 			  </address>	
-                        <span itemprop="telephone"><a href="tel:+31651119923">
+                        <span itemprop="telephone"><a href="tel:+31651119923" class="text-danger">
                                     
                              <i class="fa fa-phone"></i> +316 51 119 923</a>
                             </span><br>
