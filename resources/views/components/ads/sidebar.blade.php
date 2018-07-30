@@ -1,6 +1,6 @@
 <div class="col-lg-3 mb-4 mt-4">
           <div class="card h-100 bg-info">
-            <h4 class="card-header text-white">Development</h4>
+            <h4 class="card-header text-white">Ontwikkeling</h4>
             <div class="card-body bg-white">
             <a href="#"><img class="card-img-top" src="{{asset('/img/acc_2.jpeg')}}" alt=""></a>
               <p class="card-text text-info">

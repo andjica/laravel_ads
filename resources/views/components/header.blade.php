@@ -4,9 +4,10 @@
       
       <img src="{{asset('/img/logo.png')}}" class="img-fluid">
        <h3 class="mb-5 text-info">
-         The best Advertising Website in the <b class="text-white">Netherlands</b>
+       De beste advertentie-website 
+         <b class="text-white">van Nederland</b>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{asset('/register')}}">Sign up</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{asset('/register')}}">Registreer nu</a>
       </div>
       
       <div class="overlay"></div>

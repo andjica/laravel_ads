@@ -11,19 +11,19 @@
           <a class="js-scroll-trigger" href="{{asset('/')}}">Home</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{{asset('/development')}}">Development</a>
+          <a class="js-scroll-trigger" href="{{asset('/development')}}">Ontwikkeling</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{{asset('/recruitment')}}">Werwing</a>
+          <a class="js-scroll-trigger" href="{{asset('/recruitment')}}">Werving</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{{asset('/items')}}">Tweend Hands</a>
+          <a class="js-scroll-trigger" href="{{asset('/items')}}">Tweedehands</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{{asset('/houses')}}">Houses</a>
+          <a class="js-scroll-trigger" href="{{asset('/houses')}}">Onroerend goed</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{{asset('/cars')}}">Auto's</a>
+          <a class="js-scroll-trigger" href="{{asset('/cars')}}"> Voertuigen</a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="{{asset('/company')}}">Bedrijfspromotie</a>
@@ -31,15 +31,15 @@
         {{-- PROVERAVA DA LI IMA SESIJA I NA OSNOVU TOGA SETUJE --}}
         @if(auth()->check())
           <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="{{asset('user_profile')}}">Go to your dashboard</a>
+            <a class="js-scroll-trigger" href="{{asset('user_profile')}}">Ga naar je dashboard </a>
           </li>
           @else
           <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="{{asset('/login')}}">Sign up/Sign in</a>
+            <a class="js-scroll-trigger" href="{{asset('/login')}}">Aanmelden/Login</a>
           </li>
         @endif
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{{asset('/accounttypes')}}">See account PRO</a>
+          <a class="js-scroll-trigger" href="{{asset('/accounttypes')}}">Zie account PRO</a>
         </li>
         
       </ul>

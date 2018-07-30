@@ -12,13 +12,22 @@
             <a href="{{asset('/')}}">Home</a>
           </li>
           <li class="list-inline-item">
-            <a href="{{asset('/development')}}">Development</a>
+            <a href="{{asset('/development')}}">Ontwikkeling</a>
           </li>
           <li class="list-inline-item">
-            <a href="{{asset('/recruitment')}}">Recruitment</a>
+            <a href="{{asset('/recruitment')}}">Werving</a>
           </li>
           <li class="list-inline-item">
-            <a href="{{asset('/items')}}">Second-hand</a>
+            <a href="{{asset('/items')}}">Tweedehands</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="{{asset('/houses')}}">Onroerend goed</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="{{asset('/cars')}}">Voertuigen</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="{{asset('/company')}}">Bedrijfspromotie</a>
           </li>
           <li class="list-inline-item">
             <a href="{{asset('/accounttypes')}}">Account type</a>

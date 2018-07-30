@@ -9,7 +9,7 @@
             <a class="portfolio-item" href="{{asset('/development')}}">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>Development</h2>
+                  <h2>Ontwikkelingen</h2>
                   <p class="mb-0">
                   Toon uw website, iOS-app en Android-applicatie!</p>
 					
@@ -23,9 +23,9 @@
             <a class="portfolio-item" href="{{asset('/recruitment')}}">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>Reqruitment</h2>
+                  <h2>Werving en Selectie</h2>
                   <p class="mb-0">
-                    Zoek een baan, maak een advertentie over jezelf!</p>
+                    Zoek jij een baan, maak een advertentie over jezelf!</p>
                 </span>
               </span>
               <img class="img-fluid" src="img/service2.jpg" alt="">
@@ -35,9 +35,9 @@
             <a class="portfolio-item" href="{{asset('/items')}}">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>Tweede Hands</h2>
+                  <h2>TweedeHands</h2>
                   <p class="mb-0">
-                    Werp geen dingen, laat ze niet zien!
+                    Werp geen dingen weg, laat ze zien!
                   </p>
                 </span>
               </span>

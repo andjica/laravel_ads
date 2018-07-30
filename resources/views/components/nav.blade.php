@@ -11,20 +11,20 @@
           <a class="js-scroll-trigger" href="#page-top">Home</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#about">About</a>
+          <a class="js-scroll-trigger" href="#about">Over ons</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#recent_ads">Services</a>
+          <a class="js-scroll-trigger" href="#recent_ads">Diensten</a>
         </li>
 
         {{-- PROVERAVA DA LI IMA SESIJA I NA OSNOVU TOGA SETUJE --}}
         @if(auth()->check())
           <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="{{asset('user_profile')}}">Go to your dashboard</a>
+            <a class="js-scroll-trigger" href="{{asset('user_profile')}}">Ga naar je dashboard</a>
           </li>
           @else
           <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#sign">Sign up/Sign in</a>
+            <a class="js-scroll-trigger" href="#sign">Aanmelden /Login </a>
           </li>
         @endif
 
@@ -32,7 +32,7 @@
           <a class="js-scroll-trigger" href="#contact">Contact</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{{asset('/accounttypes')}}">See account PRO</a>
+          <a class="js-scroll-trigger" href="{{asset('/accounttypes')}}">Zie account PRO</a>
         </li>
       </ul>
     </nav>

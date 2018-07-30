@@ -3,19 +3,19 @@
 
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="{{asset('/development')}}">Development</a>
+            <a href="{{asset('/development')}}">Ontwikkeling</a>
           </li>
           <li class="list-inline-item">
             <a href="{{asset('/recruitment')}}">Werving</a>
           </li>
           <li class="list-inline-item">
-            <a href="{{asset('/items')}}">Tweend Hands</a>
+            <a href="{{asset('/items')}}">TweedeHands</a>
           </li>
           <li class="list-inline-item">
-            <a href="{{asset('/houses')}}">Houses</a>
+            <a href="{{asset('/houses')}}">Huizen / onroerend goed</a>
           </li>
           <li class="list-inline-item">
-            <a href="{{asset('/cars')}}">Cars</a>
+            <a href="{{asset('/cars')}}">Voertuigen</a>
           </li>
           <li class="list-inline-item">
             <a href="{{asset('/company')}}">Bedrijfspromotie</a>
@@ -25,9 +25,6 @@
           </li>
             <li class="list-inline-item">
                 <a href="{{asset('/user_ads')}}">Bekijk uw advertentie</a>
-            </li class="list-inline-item">
-            <li class="list-inline-item">
-                <a href="#">Manipulationg picture</a>
             </li class="list-inline-item">
             <li>
                 <a href="{{asset('/user_profile')}}">Uw profiel</a>

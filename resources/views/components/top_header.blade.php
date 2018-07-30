@@ -5,19 +5,19 @@
  <a href="{{asset('/')}}" class="btn btn-secondary"><b>&copy;IederWatWils  2018. All Rights Reserved.</b></a>
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="{{asset('/development')}}">Development</a>
+            <a href="{{asset('/development')}}">Ontwikkeling</a>
           </li>
           <li class="list-inline-item">
             <a href="{{asset('/recruitment')}}">Werving</a>
           </li>
           <li class="list-inline-item">
-            <a href="{{asset('/items')}}">Tweend Hands</a>
+            <a href="{{asset('/items')}}">Tweedehands</a>
           </li>
           <li class="list-inline-item">
-            <a href="{{asset('/houses')}}">Houses</a>
+            <a href="{{asset('/houses')}}">Onroerend goed</a>
           </li>
           <li class="list-inline-item">
-            <a href="{{asset('/cars')}}">Cars</a>
+            <a href="{{asset('/cars')}}">Voertuigen</a>
           </li>
           <li class="list-inline-item">
             <a href="{{asset('/company')}}">Bedrijfspromotie</a>
