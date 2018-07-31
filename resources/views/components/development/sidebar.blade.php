@@ -5,7 +5,7 @@
           </div>
        
           
-            <h5 class="card-header text-danger">Your Dashboard</h5>
+            <h5 class="card-header text-danger">Uw Gebruikerspannel</h5>
             <div class="card-body">
               <div class="row">
                 <div class="col-lg-6">

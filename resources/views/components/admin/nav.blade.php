@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand text-white" href="index.html">Admin Dashboard</a>
+    <a class="navbar-brand text-white" href="index.html">Admin Gebruikerspannel</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,7 +8,7 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
           <a class="nav-link" href="{{asset('/admin')}}">
             <i class="fa fa-fw fa-dashboard"></i>
-            <span class="nav-link-text">Dashboard</span>
+            <span class="nav-link-text">Gebruikerspannel</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
@@ -20,47 +20,47 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="{{asset('/admin')}}">
             <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Tables</span>
+            <span class="nav-link-text">Tabellen</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-wrench"></i>
-            <span class="nav-link-text">User and Ads settings</span>
+            <span class="nav-link-text">Gebruikers en advertentie instelling</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
             <li>
-              <a href="{{asset('/admin_ads')}}">Ads</a>
+              <a href="{{asset('/admin_ads')}}">Advertenties</a>
             </li>
             <li>
-              <a href="{{asset('/admin_user')}}">Users</a>
+              <a href="{{asset('/admin_user')}}">Gebruikers</a>
             </li>
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-file"></i>
-            <span class="nav-link-text">Example Pages</span>
+            <span class="nav-link-text">Voorbeeld pagina's</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-              <a href="login.html">Login Page</a>
+              <a href="login.html">Login pagina</a>
             </li>
             <li>
-              <a href="register.html">Registration Page</a>
+              <a href="register.html">Registratie Pagina</a>
             </li>
             <li>
-              <a href="forgot-password.html">Forgot Password Page</a>
+              <a href="forgot-password.html">Wachtwoord vergeten pagina</a>
             </li>
             <li>
-              <a href="blank.html">Blank Page</a>
+              <a href="blank.html">Lege pagina</a>
             </li>
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-sitemap"></i>
-            <span class="nav-link-text">Menu Levels</span>
+            <span class="nav-link-text">Menu niveau's</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseMulti">
             <li>
@@ -106,7 +106,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-fw fa-envelope"></i>
-            <span class="d-lg-none">Messages
+            <span class="d-lg-none">Berichten
               <span class="badge badge-pill badge-primary">12 New</span>
             </span>
             <span class="indicator text-primary d-none d-lg-block">

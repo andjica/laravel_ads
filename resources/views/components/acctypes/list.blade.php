@@ -6,7 +6,7 @@
 <a href="{{asset('/development')}}" class="list-group-item list-group-item-action bg-info flex-column align-items-start">
   <div class="d-flex w-100 justify-content-between">
     <h5 class="mb-1 text-white">Ontwikkeling</h5>
-    <small>3 days ago</small>
+    <small>3 dagen geleden</small>
   </div>
 
   <img src="./img/acc_1.jpeg" class="img-fluid"/>
@@ -20,7 +20,7 @@
 <a href="{{asset('/recruitment')}}" class="list-group-item list-group-item-action flex-column align-items-start">
   <div class="d-flex w-100 justify-content-between">
     <h5 class="mb-1">Werving</h5>
-    <small class="text-muted">3 days ago</small>
+    <small class="text-muted">3 dagen geleden</small>
   </div>
   <img src="./img/acc_2.jpeg" class="img-fluid"/>
   <p class="mb-1">

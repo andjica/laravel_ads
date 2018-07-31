@@ -8,24 +8,24 @@ This table is intended for modification <b>account type</b></div>
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead class="text-white bg-primary">
               <tr>
-                  <th>User name</th>
+                  <th>Gebruikersnaam</th>
                   <th>Email</th>
-                  <th>Title</th>
-                  <th>Categories</th>
+                  <th>Titel</th>
+                  <th>Categorie</th>
                   <th>Account type</th>
-                  <th>Edit</th>
-                  <th>Delete</th>
+                  <th>Bewerk</th>
+                  <th>Verwijder</th>
                 </tr>
               </thead>
               <tfoot>
               <tr>
-                  <th>User name</th>
+                  <th>Gebruikersnaam</th>
                   <th>Email</th>
-                  <th>Title</th>
-                  <th>Categories</th>
+                  <th>Titel</th>
+                  <th>Categorie</th>
                   <th>Account type</th>
-                  <th>Edit</th>
-                  <th>Delete</th>
+                  <th>Bewerk</th>
+                  <th>Verwijder</th>
                 </tr>
               </tfoot>
               <tbody>
@@ -66,21 +66,21 @@ Put email from user you want to edit</div>
     <input type="email" class="form-control" id="exampleFormControlInput1" readonly placeholder="name@example.com">
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Choice category</label>
+    <label for="exampleFormControlSelect1">Kies een categorie</label>
     <select class="form-control" id="exampleFormControlSelect1">
-      <option>Development</option>
-      <option>Recruitment</option>
-      <option>Second Hand</option>
+      <option>Ontwikkeling</option>
+      <option>Werving</option>
+      <option>Tweede hands</option>
       
     </select>
  
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Choice account type</label>
+    <label for="exampleFormControlSelect1">Kies account type</label>
     <select class="form-control" id="exampleFormControlSelect1">
-      <option>Free account</option>
+      <option>Gratis</option>
       <option>Pro</option>
-      <option>Super Pro</option>
+      <option>Premium</option>
       
     </select>
  
