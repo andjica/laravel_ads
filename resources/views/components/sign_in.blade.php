@@ -8,7 +8,7 @@
 					<input type="text" class="form-control" id="inputEmail" placeholder="Email" name="email">
 				</div>
 			  <div class="form-group mx-sm-3 mb-2">
-				<label for="inputPassword2" class="sr-only">Password</label>
+				<label for="inputPassword2" class="sr-only">Wachtwoord</label>
 				<input type="password" class="form-control" id="inputPassword2" placeholder="Password" name="password">
 			  </div>
 			<button type="submit" class="btn btn-danger mb-2">Login</button> &nbsp; &nbsp; &nbsp; 

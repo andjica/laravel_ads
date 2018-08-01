@@ -15,8 +15,8 @@
        
         <hr>
         <p class="text-info"></b> {{$ad->body}}</p>
-        <p class="text-info">Website Location</b> {{$ad->website}}</p>
-        <p class="text-warning"><b>Posted by {{$ad->user->name}} on: </b><b class="text-info">{{$ad->created_at}}</b></p>
+        <p class="text-info">Website Link</b> {{$ad->website}}</p>
+        <p class="text-warning"><b>Geplaatst door {{$ad->user->name}} op: </b><b class="text-info">{{$ad->created_at}}</b></p>
       </div>
       <div class="card-footer">
         <a href="{{asset('/ad/'.$ad->id)}}" class="btn btn-primary">Find Out More!</a>

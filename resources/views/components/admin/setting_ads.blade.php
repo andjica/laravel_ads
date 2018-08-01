@@ -1,29 +1,29 @@
 <div class="col-lg-9">
 <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-table text-danger"></i> Users and Ads table - 
+          <i class="fa fa-table text-danger"></i> Gebruikers en advertentie pannel - 
 This table is intended for modification <b>account type</b></div>
         <div class="card-body">
           <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead class="text-white bg-primary">
               <tr>
-                  <th>User name</th>
-                  <th>Title</th>
-                  <th>Description</th>
-                  <th>Categories</th>
-                  <th>Edit</th>
-                  <th>Delete</th>
+                  <th>Gebruikersnaam</th>
+                  <th>Titel</th>
+                  <th>Beschrijving</th>
+                  <th>Categorie</th>
+                  <th>Bewerk</th>
+                  <th>Verwijder</th>
                 </tr>
               </thead>
               <tfoot>
               <tr>
-                  <th>User name</th>
-                  <th>Title</th>
-                  <th>Description</th>
-                  <th>Categories</th>
-                  <th>Edit</th>
-                  <th>Delete</th>
+                  <th>Gebruikersnaam</th>
+                  <th>Titel</th>
+                  <th>Beschrijving</th>
+                  <th>Categorie</th>
+                  <th>Bewerk</th>
+                  <th>Verwijder</th>
                 </tr>
               </tfoot>
               <tbody>
@@ -67,20 +67,20 @@ Put email from user you want to edit</div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Choice category</label>
     <select class="form-control" id="exampleFormControlSelect1">
-      <option>Development</option>
-      <option>Recruitment</option>
-      <option>Second Hand</option>
+      <option>Ontwikkeling</option>
+      <option>Werving</option>
+      <option>Tweede Hands</option>
       
     </select>
  
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Title of ads</label>
+    <label for="exampleFormControlSelect1">Titel van advertentie</label>
     <input type="text" nema="title" class="form-control" id="exampleFormControlInput1" placeholder="title of ads">
  
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Description of ads</label>
+    <label for="exampleFormControlSelect1">Beschrijving van advertentie</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
  
   </div>

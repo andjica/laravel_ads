@@ -16,7 +16,7 @@
             <p class="text-faded mb-0">Mogelijkheid om uw advertentie een volledige maand gratis te plaatsen
             </p>
             <a href="{{asset('/accounttypes')}}" class="text-light badge badge-danger" data-toggle="tooltip" data-placement="top" title="Bekijk PRO-pakketen">
-        Maak een advertentie met 25 foto's</a>
+        Maak nu uw advertentie</a>
           </div>
           <div class="col-lg-3 col-md-6">
             <span class="service-icon rounded-circle mx-auto mb-3">
@@ -47,7 +47,7 @@
               <i class="fa fa-map-marker"></i>
             </span>
             <h4>
-              <strong>Favorited</strong>
+              <strong>Favorieten</strong>
             </h4>
             <p class="text-faded mb-0">
               Een mooi en duidelijk overzicht van uw advertentie die voor iedereen beschikbaar is met gegevens zoals afbeeldingen, inhoud, mappen, video's, foto's.
