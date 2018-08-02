@@ -24,8 +24,8 @@
 					<input type="text" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email">
 				</div>
 			  <div class="form-group mx-sm-5 mb-2">
-				<label for="inputPassword" class="sr-only">Wachtwoord</label>
-				<input type="password" class="form-control" name="inputPassword" id="inputPassword" placeholder="Password">
+				<label for="inputPassword" class="sr-only">Telefoonnummer</label>
+				<input type="text" class="form-control" name="inputPassword" id="inputPassword" placeholder="Password">
 			  </div>
 			  <div class="form-group mx-sm-5 mb-2">
 			
