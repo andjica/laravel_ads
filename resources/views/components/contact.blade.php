@@ -25,7 +25,7 @@
 				</div>
 			  <div class="form-group mx-sm-5 mb-2">
 				<label for="inputPassword" class="sr-only">Telefoonnummer</label>
-				<input type="text" class="form-control" name="inputPassword" id="inputPassword" placeholder="Password">
+				<input type="text" class="form-control" name="inputPassword" id="inputPassword" placeholder="Telefoonnummer">
 			  </div>
 			  <div class="form-group mx-sm-5 mb-2">
 			
