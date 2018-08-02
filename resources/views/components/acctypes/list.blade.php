@@ -45,7 +45,7 @@
     <small class="text-muted">3 days ago</small>
   </div>
   <img src="./img/acc_4.jpeg" class="img-fluid"/>
-  <p class="mb-1">Adverteer bij elkwatwils welke voertuigen in wilt verkopen.</p>
+  <p class="mb-1">Adverteer bij IederWatWils welke voertuigen in wilt verkopen.</p>
   <small class="text-muted">IederWatWils 2018.</small>
 </a>
 <a href="{{asset('/houses')}}" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -54,7 +54,7 @@
     <small class="text-muted">3 days ago</small>
    </div>
   <img src="./img/acc_5.jpeg" class="img-fluid"/>
-  <p class="mb-1">Op zoek naar een ideaal huis? Zie EigenWatWils eigen advertenties.</p>
+  <p class="mb-1">Op zoek naar een ideaal huis? Zie IederWatWils eigen advertenties.</p>
   <small class="text-muted">IederWatWils 2018.</small>
 </a>
 </div>

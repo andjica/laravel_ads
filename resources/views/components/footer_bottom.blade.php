@@ -2,12 +2,7 @@
       <div class="container">
       <p class="text-info"> <a href="{{asset('/')}}" class="btn btn-info"><b>&copy;IederWatWils  2018. All Rights Reserved.</b></a>
         <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">Privacy</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Terms</a>
-          </li>
+          
           <li class="list-inline-item">
             <a href="{{asset('/')}}">Home</a>
           </li>

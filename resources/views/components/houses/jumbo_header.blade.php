@@ -13,12 +13,12 @@
         <img src="{{asset('./img/house1.jpg')}}" class="img-fluid" alt="houses iederwatwils advertentie">
         <p class="lead text-primary p-3 rounded my-3">
        
-        Als jij je huis nog niet hebt verkocht dan isIederWatWils waar je moet zijn. Maak een advertentie! Toon uw huis dat u wilt verkopen met veel foto's, video's en locatie. 
+        Als jij je huis nog niet hebt verkocht dan is IederWatWils waar je moet zijn. Maak een advertentie! Toon uw huis die u wilt verkopen met veel foto's, video's. 
         Zodat u uw huis op een gemakkelijke manier kan verkopen!
             Maak van uw huis een droomhuis voor anderen, of koop uw droomhuis van een ander.
             Via de mooiste zelfgemaakte video's bij <b>IederWatWils</b>
             laat u zien dat wonen een genot kan zijn. Met uw koop of verkoop
-            maakt u uzelf of andere mensen blij en gelukkig. <b>IederWatWils, ONROEREND GOED IS OOK ECHT GOED!!</b>
+            maakt u uw zelf of andere mensen blij en gelukkig. <b>IederWatWils, ONROEREND GOED IS OOK ECHT GOED!!</b>
             <b>Klik hier om te registreren: </b>
         </p>
         <a href="{{asset('/register')}}" class="btn btn-primary btn-lg">Aanmelden</a>
@@ -39,7 +39,7 @@
             Maak van uw huis een droomhuis voor anderen, of koop uw droomhuis van een ander.
             Via de mooiste zelfgemaakte video's bij <b>IederWatWils</b>
             laat u zien dat wonen een genot kan zijn. Met uw koop of verkoop
-            maakt u uzelf of andere mensen blij en gelukkig. <b>IederWatWils, ONROEREND GOED IS OOK ECHT GOED!!</b>
+            maakt u uwzelf of andere mensen blij en gelukkig. <b>IederWatWils, ONROEREND GOED IS OOK ECHT GOED!!</b>
 
         <b>Klik hier om te registreren: </b>
         </p>
