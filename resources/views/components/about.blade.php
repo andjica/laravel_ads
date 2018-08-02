@@ -20,7 +20,7 @@ IEDERWATWILS IS ADVERTEREN 2.0!! <b> Bekijk onze categorieën</b>:
             <li class="list-inline-item"><a class="btn btn-danger btn-xl m-2" href="{{asset('/company')}}"> Bedrijfspromotie</a> </li> 
             </ul>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    
+     
           </div>
         </div>
       </div>
