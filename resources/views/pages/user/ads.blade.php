@@ -25,13 +25,14 @@
 @include('components.user.user_header')
 <div class="container">
 
+@if($ad)
     <div class="row my-4">
         
    
         @include('components.ads.slider')
         
     </div>
-    @if($ad)
+    
     <div class="row">
        <div class="col-lg-12">
         

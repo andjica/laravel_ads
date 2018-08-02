@@ -66,7 +66,7 @@ class frontController extends Controller
     }
     public function get_com()
     {
-        $ads = Ad::with('pictures')->orderBy('created_at', 'desc')->paginate(8);
+        $ads = Ad::with('pictures')->where('category_id' , '6')->orderBy('created_at', 'desc')->paginate(8);
 
         return view('pages.company', compact('ads'));
     }
