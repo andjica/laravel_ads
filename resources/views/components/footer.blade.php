@@ -3,18 +3,18 @@
       <div class="container">
         <ul class="list-inline mb-5">
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="#">
+            <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/search/str/iederwatwils/keywords_search">
               <i class="icon-social-facebook"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="#">
+            <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/search?q=iederwatwils&src=typd">
               <i class="icon-social-twitter"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="#">
-              <i class="icon-social-github"></i>
+            <a class="social-link rounded-circle text-white" href="https://www.instagram.com/iederwatwils/">
+              <i class="icon-social-instagram"></i>
             </a>
           </li>
         </ul>

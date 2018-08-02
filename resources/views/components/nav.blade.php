@@ -22,6 +22,7 @@
           <li class="sidebar-nav-item">
             <a class="js-scroll-trigger" href="{{asset('user_profile')}}">Ga naar je dashboard</a>
           </li>
+          
           @else
           <li class="sidebar-nav-item">
             <a class="js-scroll-trigger" href="#sign">Aanmelden /Login </a>
@@ -32,7 +33,7 @@
           <a class="js-scroll-trigger" href="#contact">Contact</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{{asset('/accounttypes')}}">Zie account PRO</a>
+          <a class="js-scroll-trigger" href="{{asset('/accounttypes')}}">Zie Pakketten</a>
         </li>
       </ul>
     </nav>

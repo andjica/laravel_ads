@@ -39,7 +39,7 @@
           </li>
         @endif
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{{asset('/accounttypes')}}">Zie account PRO</a>
+          <a class="js-scroll-trigger" href="{{asset('/accounttypes')}}">Zie pakketten</a>
         </li>
         
       </ul>

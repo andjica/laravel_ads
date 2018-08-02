@@ -14,19 +14,19 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row" class="text-white">ADS</th>
+      <th scope="row" class="text-white">Avertenties</th>
       <td>1 </td>
       <td>1 </td>
       <td>1 </td>
     </tr>
     <tr>
-      <th scope="row" class="text-white">Title</th>
-      <td>ja</td>
-      <td>ja</td>
+      <th scope="row" class="text-white">Web link</th>
+      <td>nee</td>
+      <td>nee</td>
       <td>ja</td>
     </tr>
     <tr>
-      <th scope="row" class="text-white">Content</th>
+      <th scope="row" class="text-white">Beschrijving</th>
       <td>ja</td>
       <td>ja</td>
       <td>ja</td>
