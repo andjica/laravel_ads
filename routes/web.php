@@ -1,9 +1,6 @@
 <?php
 
-Route::get('/test', function()
-{
-  dd(request());
-});
+Route::post('/send', 'MailController@send');
 
 Route::get('/', "frontController@index");
 
