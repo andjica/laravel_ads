@@ -3,25 +3,27 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Ad;
 
 class adminController extends Controller
 {
 
-    /*public function __construct()
+    public function __construct()
     {
         $this->middleware('admin');
-    }*/
-
-    public function index(){
-
-        return view('pages.admin.index');
     }
-    public function get_ads(){
 
-        return view('pages.admin.ads');
+    public function index()
+    {
+        $ads = Ad::all();
+
+        return view('pages.admin.index', compact('ads'));
     }
-    public function get_user(){
 
-        return view('pages.admin.user');
+    public function destroy($id)
+    {
+        Ad::destroy($id);
+
+        return redirect()->back();
     }
 }

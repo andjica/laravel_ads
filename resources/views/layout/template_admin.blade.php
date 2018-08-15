@@ -20,7 +20,6 @@
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-@include('components.admin.nav')
 
 @yield('content')
 
