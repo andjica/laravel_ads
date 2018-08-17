@@ -236,10 +236,14 @@ class PaymentController extends Controller
 
             \Session::put('success', 'Payment success');
             
-            $user_account = Account::find(auth()->user()->id);
+            $user_account = Account::where('user_id',auth()->user()->id)->first();
             $user_account->account_type_id = 2;
             $user_account->valid_until = \Carbon\Carbon::now()->addMonth();
             $user_account->save();
+
+            // $user = User::find(auth()->user()->id);
+            // $user->account->account_type_id = 2;
+            // $user->save();
 
             Purchase::create([
                 'user_id' => auth()->user()->id,
@@ -283,7 +287,7 @@ class PaymentController extends Controller
 
             \Session::put('success', 'Payment success');
             
-            $user_account = Account::find(auth()->user()->id);
+            $user_account = Account::where('user_id',auth()->user()->id)->first();
             $user_account->account_type_id = 3;
             $user_account->valid_until = \Carbon\Carbon::now()->addMonth();
             $user_account->save();
