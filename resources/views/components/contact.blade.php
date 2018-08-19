@@ -16,20 +16,21 @@
 	
 	<div class="col-lg-4 my-5">
 	
-		<form class="form-group">
+	<form class="form-group" method="POST" action="{{asset('/send')}}">
+		@csrf
 		<h3 class="text-primary text-center">Stuur ons een bericht voor meer informatie
 </h3>
 				<div class="form-group mx-sm-5 mb-2">
 					<label for="inputEmail" class="sr-only">Email</label>
-					<input type="text" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email">
+					<input type="text" class="form-control" name="mail" id="inputEmail" placeholder="Email">
 				</div>
 			  <div class="form-group mx-sm-5 mb-2">
 				<label for="inputPassword" class="sr-only">Telefoonnummer</label>
-				<input type="text" class="form-control" name="inputPassword" id="inputPassword" placeholder="Telefoonnummer">
+				<input type="text" class="form-control" name="phone" id="inputPassword" placeholder="Telefoonnummer">
 			  </div>
 			  <div class="form-group mx-sm-5 mb-2">
 			
-				<textarea rows="10" cols="100" class="form-control" name="message" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+				<textarea rows="10" cols="100" class="form-control" name="body" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
 			  </div>
 			 <div class="form-group mx-sm-5 mb-2">
 				<input type="submit" class="btn btn-danger mb-2" value="Verzend">
