@@ -8,13 +8,13 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead>
                 <tr>
-                  <th>User name</th>
+                  <th>Gebruikersnaam</th>
                   <th>Email</th>
-                  <th>Title</th>
-                  <th>Description</th>
-                  <th>Image</th>
+                  <th>Titel</th>
+                  <th>Beschrijving</th>
+                  <th>Foto</th>
                   <th>Account type</th>
-                  <th>Categories</th>
+                  <th>Categorie</th>
                 </tr>
               </thead>
               <tfoot>

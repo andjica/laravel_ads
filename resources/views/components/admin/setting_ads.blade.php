@@ -80,7 +80,7 @@ Put email from user you want to edit</div>
  
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Beschrijving van advertentie</label>
+    <label for="exampleFormControlSelect1">Beschrijving van uw advertentie</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
  
   </div>

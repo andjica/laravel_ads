@@ -1,7 +1,7 @@
 
 <hr>
 <div class="col-lg-3"  id="table1">
-    <h3 class="text-info">Bekijk onze aantrekkelijke pakketen</h3>
+    <h3 class="text-info">Bekijk onze aantrekkelijke pakketten</h3>
 </div>
 <table class="table table-bordered table-dark text-center text-info">
   <thead>
@@ -14,7 +14,7 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row" class="text-white">Avertenties</th>
+      <th scope="row" class="text-white">Advertenties</th>
       <td>1 </td>
       <td>1 </td>
       <td>1 </td>
@@ -32,13 +32,13 @@
       <td>ja</td>
     </tr>
     <tr>
-      <th scope="row" class="text-white">Photo</th>
+      <th scope="row" class="text-white">Foto's</th>
       <td>5</td>
       <td>15</td>
       <td>25</td>
     </tr>
     <tr>
-      <th scope="row" class="text-white">Video</th>
+      <th scope="row" class="text-white">Video's</th>
       <td>nee</td>
       <td>1 Video</td>
       <td>3 Video's</td>
