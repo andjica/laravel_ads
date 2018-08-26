@@ -1,7 +1,5 @@
 
 
-
-
 <div class="col-md-8">
 <img src="{{asset('/img/logo.png')}}" class="img-fluid"/>
 <h3 class="my-2 text-danger">Heeft voor jou een gratis advertentie voor je klaargemaakt
@@ -16,4 +14,5 @@
   
   @include('components.acctypes.table')
 </div>
+
 
