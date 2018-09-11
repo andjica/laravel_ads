@@ -11,7 +11,7 @@ class MailController extends Controller
     public function send()
     {
         // dd(request());
-        Mail::to('jellytot95@gmail.com')->send(new ContactUs(request()->mail, request()->body));
+        Mail::to('iederwatwils@gmail.com')->send(new ContactUs(request()->mail, request()->body));
 
         return redirect('user_profile');
     }

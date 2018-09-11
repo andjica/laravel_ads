@@ -53,7 +53,7 @@
 			  </address>
 			  <address>
 				<abbr title="Email">Email:</abbr>
-				<a href="mailto:info@iederwatwils.nl" class="text-danger">info@iederwatwils.nl</a>
+				<a href="mailto:info@iederwatwils.nl" class="text-danger">iederwatwils@gmail.com</a>
 			  </address>	
                         <span itemprop="telephone"><a href="tel:+31651119923" class="text-danger">
                                     

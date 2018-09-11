@@ -30,7 +30,7 @@
 </a>
 <a href="{{asset('/items')}}" class="list-group-item list-group-item-action flex-column align-items-start">
   <div class="d-flex w-100 justify-content-between">
-    <h5 class="mb-1">Tweede hands</h5>
+    <h5 class="mb-1">Tweedehands</h5>
     <small class="text-muted">3 dagen geleden</small>
   </div>
   <img src="./img/acc_3.jpeg" class="img-fluid"/>

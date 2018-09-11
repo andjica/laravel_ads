@@ -30,7 +30,7 @@
           <li class="list-inline-item">
           
           <a href="mailto:info@iederwatwils.nl" class="btn btn-default">
-          <i class="fa fa-envelope text-info" aria-hidden="true">info@iederwatwils.nl</i></a>
+          <i class="fa fa-envelope text-info" aria-hidden="true">iederwatwils@gmail.com</i></a>
 
 
           </li>
