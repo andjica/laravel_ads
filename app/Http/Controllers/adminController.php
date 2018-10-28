@@ -26,4 +26,9 @@ class adminController extends Controller
 
         return redirect()->back();
     }
+
+    public function payment()
+    {
+        return view('pages.admin.payment');
+    }
 }

@@ -8,7 +8,9 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead>
                 <tr>
-                  <th>Gebruikersnaam</th>
+                <!-- Ubaci ovde ime usera, email, 
+                naslov, sadrzaj, prvu fotografiju, acc type i categoriju -->
+                  <th>Naam</th>
                   <th>Email</th>
                   <th>Titel</th>
                   <th>Beschrijving</th>

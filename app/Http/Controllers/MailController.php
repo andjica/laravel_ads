@@ -16,3 +16,4 @@ class MailController extends Controller
         return redirect('user_profile');
     }
 }
+

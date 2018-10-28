@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="content-wrapper">
+@include('components.admin.nav')
     <div class="container-fluid">
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
@@ -10,17 +11,17 @@
         </li>
         <li class="breadcrumb-item active">My Dashboard</li>
       </ol>
-    </div>
-    <table style="border:1px solid black;">
-      <tr>
+      <table class="table">
+      <tr style="background-color:#F74FE4;">
+      <!--Ovde ubacujemo, id, title, description, expares at -->
         <th>ID</th>
-        <th>Title</th>
-        <th>Body</th>
-        <th>Expires at</th>
+        <th>Tietel</th>
+        <th>Omschrijving</th>
+        <th>Verval datum</th>
         <th>Delete</th>
       </tr>
       @foreach($ads as $ad)
-      <tr style="border:1px solid black;">
+      <tr>
         <td> {{$ad->id}}</td>
         <td> {{$ad->title}}</td>
         <td> {{$ad->body}}</td>
@@ -29,5 +30,8 @@
       </tr>
       @endforeach
     </table>
+    @include('components.admin.table')
+    </div>
+   
 </div>
 @endsection

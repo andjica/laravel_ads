@@ -44,6 +44,7 @@ Route::get('/logout', 'Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', "adminController@index");
+Route::get('/admin-payment', 'adminController@payment');
 
 Route::get('/admin-delete/{id}', 'adminController@destroy');
 
